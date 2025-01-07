@@ -14,11 +14,12 @@
     <!-- Tailwind -->
     <link rel="stylesheet" href="./src/style.css" />
   </head>
-  <body class="bg-black">
-    <main>
-      <header class="bg-white dark:bg-gray-900">
+  <body>
+    <main class="bg-white dark:bg-black">
+      <header class="h-20 fixed top-0 w-dvw z-10">
+        <div class="header__background h-20 absolute z-[3] w-dvw blur-lg bg-white dark:bg-black opacity-50"></div>
         <nav
-          class="container mx-auto block md:flex justify-between items-center p-4"
+          class="container mx-auto block md:flex justify-between items-center p-4 z-[10] w-full relative bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent"
         >
           <div class="flex justify-between items-center w-full md:w-fit">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -43,55 +44,64 @@
             class="hidden w-full md:flex md:items-center justify-between md:w-4/5 lg:w-[68%] md:gap-5"
             id="navbar-default"
           >
-            <ul
-              class="font-medium flex flex-col p-4 md:p-0 mt-4 border mb-5 md:mb-0 border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 text-black"
-            >
+            <ul class="nav-menu">
               <li>
-                <a
-                  href="#home"
-                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent duration-500"
-                  aria-current="page"
-                  >Home</a
-                >
+                <a href="#home" class="nav-link" aria-current="page">Home</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent duration-500"
-                  >About Us</a
-                >
+                <a href="#" class="nav-link">About Us</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent duration-500"
-                  >Pricing</a
-                >
+                <a href="#" class="nav-link">Pricing</a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent duration-500"
-                  >Features</a
-                >
+                <a href="#" class="nav-link">Features</a>
               </li>
             </ul>
             <div class="flex items-center gap-5">
               <button
                 id="theme-toggle"
-                class="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-200 rounded-md"
+                class="px-4 py-2 border-2 hover:border-gray-200 hover:bg-transparent dark:hover:border-gray-700 bg-gray-200 dark:bg-gray-700 dark:border-gray-700 dark:hover:bg-transparent text-gray-900 dark:text-gray-200 rounded-md duration-300"
               >
                 <i class="bi bi-brightness-high"></i>
               </button>
-              <button
-                class="px-6 py-3 bg-black text-white text-sm tracking-wider hover:text-black hover:bg-transparent duration-300 border-black border-2 hover:font-bold hover:px-[21.3px] dark:border-white dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:text-white"
-              >
-                DOWNLOAD
-              </button>
+              <button class="btn-dark">DOWNLOAD</button>
             </div>
           </div>
         </nav>
       </header>
+
+      <section
+        class="min-h-dvh grid-cols-1 md:grid-cols-2 pt-[80px] grid items-center container mx-auto overflow-x-hidden"
+      >
+        <div
+          class="flex flex-col md:items-start items-center mx-5 md:mx-10 gap-5 relative z-[1]"
+        >
+          <div
+            class="circle-red h-52 w-72 z-[-1] absolute left-1/4 top-[-15%]"
+          ></div>
+          <h2
+            class="font-semibold text-clamp-6xl text-balance md:text-start text-center dark:text-white"
+          >
+            Make The Best Financial Decisions
+          </h2>
+          <p
+            class="text-balance text-center md:text-start text-[#57585f] dark:text-gray-300"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+            ducimus voluptatibus nobis, accusantium eligendi laborum pariatur
+            optio eaque ea consectetur?
+          </p>
+          <div class="flex items-center gap-3 md:gap-5 mt-3">
+            <a href="#" class="btn-dark"
+              >Get Started<i class="bi bi-arrow-right ms-2"></i
+            ></a>
+            <a href="#" class="dark:text-white px-2"
+              ><i class="bi bi-play-circle me-2"></i>Watch Video</a
+            >
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Flowbite -->
