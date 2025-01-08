@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js}",
+    "./src/**/*.js",
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {

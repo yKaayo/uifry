@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,10 +16,12 @@
   </head>
   <body>
     <main class="bg-white dark:bg-black">
-      <header class="h-20 fixed top-0 w-dvw z-10">
-        <div class="header__background h-20 absolute z-[3] w-dvw blur-lg bg-white dark:bg-black opacity-50"></div>
+      <header class="h-20 fixed top-0 w-dvw z-[3]">
+        <div
+          class="header__background h-20 absolute z-[3] w-dvw "
+        ></div>
         <nav
-          class="container mx-auto block md:flex justify-between items-center p-4 z-[10] w-full relative bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent"
+          class="container mx-auto block md:flex justify-between items-center p-4 z-[10] h-20 w-full relative dark:bg-black md:bg-transparent dark:md:bg-transparent"
         >
           <div class="flex justify-between items-center w-full md:w-fit">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -41,47 +43,47 @@
           </div>
 
           <div
-            class="hidden w-full md:flex md:items-center justify-between md:w-4/5 lg:w-[68%] md:gap-5"
+            class="hidden w-full md:flex md:items-center justify-between md:w-4/5 lg:w-[68%] md:gap-5 border border-gray-100 md:border-none"
             id="navbar-default"
           >
-            <ul class="nav-menu">
+            <ul class="nav__menu">
               <li>
-                <a href="#home" class="nav-link" aria-current="page">Home</a>
+                <a href="#home" class="nav__link" aria-current="page">Home</a>
               </li>
               <li>
-                <a href="#" class="nav-link">About Us</a>
+                <a href="#" class="nav__link">About Us</a>
               </li>
               <li>
-                <a href="#" class="nav-link">Pricing</a>
+                <a href="#" class="nav__link">Pricing</a>
               </li>
               <li>
-                <a href="#" class="nav-link">Features</a>
+                <a href="#" class="nav__link">Features</a>
               </li>
             </ul>
-            <div class="flex items-center gap-5">
+            <div class="flex items-center px-5 md:px-0 py-5 gap-5 bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent">
               <button
                 id="theme-toggle"
                 class="px-4 py-2 border-2 hover:border-gray-200 hover:bg-transparent dark:hover:border-gray-700 bg-gray-200 dark:bg-gray-700 dark:border-gray-700 dark:hover:bg-transparent text-gray-900 dark:text-gray-200 rounded-md duration-300"
               >
                 <i class="bi bi-brightness-high"></i>
               </button>
-              <button class="btn-dark">DOWNLOAD</button>
+              <button class="btn--dark">DOWNLOAD</button>
             </div>
           </div>
         </nav>
       </header>
 
       <section
-        class="min-h-dvh grid-cols-1 md:grid-cols-2 pt-[80px] grid items-center container mx-auto overflow-x-hidden"
+        class="min-h-dvh grid-cols-1 md:grid-cols-[2fr,1fr] py-[80px] grid items-center container mx-auto overflow-x-hidden"
       >
         <div
           class="flex flex-col md:items-start items-center mx-5 md:mx-10 gap-5 relative z-[1]"
         >
           <div
-            class="circle-red h-52 w-72 z-[-1] absolute left-1/4 top-[-15%]"
+            class="circle--red h-52 w-72 z-[-1] absolute right-1 md:left-1/4 bottom-[60%]"
           ></div>
           <h2
-            class="font-semibold text-clamp-6xl text-balance md:text-start text-center dark:text-white"
+            class="font-bold text-clamp-6xl text-balance md:text-start text-center dark:text-white"
           >
             Make The Best Financial Decisions
           </h2>
@@ -93,21 +95,35 @@
             optio eaque ea consectetur?
           </p>
           <div class="flex items-center gap-3 md:gap-5 mt-3">
-            <a href="#" class="btn-dark"
-              >Get Started<i class="bi bi-arrow-right ms-2"></i
+            <a href="#" class="btn--dark"
+              >Get Started<i class="bi bi-arrow-right ms-2 text-md"></i
             ></a>
             <a href="#" class="dark:text-white px-2"
-              ><i class="bi bi-play-circle me-2"></i>Watch Video</a
+              ><i class="bi bi-play-circle me-2 text-lg"></i>Watch Video</a
             >
           </div>
         </div>
+
+        <figure class="flex relative h-full py-5 overflow-visible">
+          <img src="./src/assets/img/phone.webp" class=" w-full -rotate-12 absolute -top-8 z-[2]" alt="">
+          <img src="./src/assets/img/phone.webp" class=" w-full -rotate-12 absolute left-20 z-[1]" alt="">
+          <img src="./src/assets/img/phone.webp" class=" w-full -rotate-12 absolute left-32 top-16" alt="">
+          <figcaption></figcaption>
+        </figure>
       </section>
+
+      <!-- <section class="min-h-[calc(100dvh-80px)]">
+
+      </section> -->
     </main>
 
     <!-- Flowbite -->
-    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script
+      src="./node_modules/flowbite/dist/flowbite.min.js"
+      type="module"
+    ></script>
 
     <!-- JS -->
-    <script src="./src/main.js"></script>
+    <script src="./src/main.js" type="module"></script>
   </body>
 </html>
