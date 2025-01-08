@@ -15,13 +15,11 @@
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
-    <main class="bg-white dark:bg-black">
-      <header class="h-20 fixed top-0 w-dvw z-[3]">
-        <div
-          class="header__background h-20 absolute z-[3] w-dvw "
-        ></div>
+    <main class="bg-white dark:bg-black overflow-x-hidden">
+      <header class="fixed top-0 w-dvw z-[4]">
+        <div class="header__background h-20 absolute z-[3] w-dvw"></div>
         <nav
-          class="container mx-auto block md:flex justify-between items-center p-4 z-[10] h-20 w-full relative dark:bg-black md:bg-transparent dark:md:bg-transparent"
+          class="container mx-auto block md:flex justify-between items-center p-4 z-[10] h-20 w-full relative"
         >
           <div class="flex justify-between items-center w-full md:w-fit">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -43,7 +41,7 @@
           </div>
 
           <div
-            class="hidden w-full md:flex md:items-center justify-between md:w-4/5 lg:w-[68%] md:gap-5 border border-gray-100 md:border-none"
+            class="hidden w-full md:flex md:items-center justify-between md:w-4/5 lg:w-[68%] md:gap-5 border border-gray-100 md:border-none mt-5 md:mt-0"
             id="navbar-default"
           >
             <ul class="nav__menu">
@@ -60,7 +58,9 @@
                 <a href="#" class="nav__link">Features</a>
               </li>
             </ul>
-            <div class="flex items-center px-5 md:px-0 py-5 gap-5 bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent">
+            <div
+              class="flex items-center px-5 md:px-0 py-5 gap-5 h-20 bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent"
+            >
               <button
                 id="theme-toggle"
                 class="px-4 py-2 border-2 hover:border-gray-200 hover:bg-transparent dark:hover:border-gray-700 bg-gray-200 dark:bg-gray-700 dark:border-gray-700 dark:hover:bg-transparent text-gray-900 dark:text-gray-200 rounded-md duration-300"
@@ -74,13 +74,13 @@
       </header>
 
       <section
-        class="min-h-dvh grid-cols-1 md:grid-cols-[2fr,1fr] py-[80px] grid items-center container mx-auto overflow-x-hidden"
+        class="min-h-[calc(100dvh-160px)] md:h-dvh grid-cols-1 md:grid-cols-[55%,45%] py-[80px] grid place-items-center container mx-auto gap-10 overflow-y-clip"
       >
         <div
           class="flex flex-col md:items-start items-center mx-5 md:mx-10 gap-5 relative z-[1]"
         >
           <div
-            class="circle--red h-52 w-72 z-[-1] absolute right-1 md:left-1/4 bottom-[60%]"
+            class="circle--red right-1 md:left-1/4 bottom-[60%] z-[-1]"
           ></div>
           <h2
             class="font-bold text-clamp-6xl text-balance md:text-start text-center dark:text-white"
@@ -104,10 +104,75 @@
           </div>
         </div>
 
-        <figure class="flex relative h-full py-5 overflow-visible">
-          <img src="./src/assets/img/phone.webp" class=" w-full -rotate-12 absolute -top-8 z-[2]" alt="">
-          <img src="./src/assets/img/phone.webp" class=" w-full -rotate-12 absolute left-20 z-[1]" alt="">
-          <img src="./src/assets/img/phone.webp" class=" w-full -rotate-12 absolute left-32 top-16" alt="">
+        <figure
+          class="flex justify-center items-center relative overflow-visible h-full md:h-auto"
+        >
+          <div class="circle--red bottom-[5%] left-28 z-[1]"></div>
+          <svg
+            width="300"
+            height="480"
+            viewBox="0 0 300 480"
+            class="absolute -top-32 right-[10%] -rotate-[38deg]"
+          >
+            <ellipse
+              cx="150"
+              cy="240"
+              rx="150"
+              ry="240"
+              stroke-width="1"
+              fill="none"
+              class="stroke-black dark:stroke-white"
+            />
+          </svg>
+          <svg
+            width="300"
+            height="480"
+            viewBox="0 0 300 480"
+            class="absolute -top-10 right-[10%] -rotate-[38deg]"
+          >
+            <ellipse
+              cx="150"
+              cy="240"
+              rx="150"
+              ry="240"
+              stroke-width="1"
+              fill="none"
+              class="stroke-black dark:stroke-white"
+            />
+          </svg>
+          <svg
+            width="300"
+            height="480"
+            viewBox="0 0 300 480"
+            class="absolute top-20 right-[10%] -rotate-[38deg]"
+          >
+            <ellipse
+              cx="150"
+              cy="240"
+              rx="150"
+              ry="240"
+              stroke-width="1"
+              fill="none"
+              class="stroke-black dark:stroke-white"
+            />
+          </svg>
+
+          <img
+            src="./src/assets/img/phone.webp"
+            class="min-h-[200px] h-4/5 max-h-[calc(100dvh-80px)] -rotate-12 relative left-40 -top-20 md:left-64 z-[3]"
+            alt=""
+          />
+          <img
+            src="./src/assets/img/phone.webp"
+            class="min-h-[200px] h-4/5 max-h-[calc(100dvh-80px)] -rotate-12 relative left-0 -top-10 md:left-4 z-[2]"
+            alt=""
+          />
+
+          <img
+            src="./src/assets/img/phone.webp"
+            class="min-h-[200px] h-4/5 max-h-[calc(100dvh-80px)] -rotate-12 relative -left-40 md:-left-56 top-0 z-[1]"
+            alt=""
+          />
           <figcaption></figcaption>
         </figure>
       </section>
