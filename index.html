@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uifry</title>
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+
     <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
@@ -17,7 +20,9 @@
   <body>
     <main class="bg-white dark:bg-black overflow-x-hidden">
       <header class="fixed top-0 w-dvw z-[4]">
-        <div class="header__background h-20 absolute z-[3] w-dvw"></div>
+        <div
+          class="h-20 absolute z-[3] w-dvw bg-gradient-to-b from-white dark:from-black to-transparent"
+        ></div>
         <nav
           class="container mx-auto block md:flex justify-between items-center p-4 z-[10] h-20 w-full relative"
         >
@@ -76,12 +81,12 @@
       <section
         class="min-h-[calc(100dvh-160px)] md:h-dvh grid-cols-1 md:grid-cols-[55%,45%] py-[80px] grid place-items-center container mx-auto gap-10 overflow-y-clip"
       >
+      <div
+        class="circle--red right-1 md:right-[60%] bottom-[60%] z-[1]"
+      ></div>
         <div
-          class="flex flex-col md:items-start items-center mx-5 md:mx-10 gap-5 relative z-[1]"
+          class="flex flex-col md:items-start items-center mx-5 md:mx-10 gap-5 relative z-[1] animate__animated animate__fadeInLeft"
         >
-          <div
-            class="circle--red right-1 md:left-1/4 bottom-[60%] z-[-1]"
-          ></div>
           <h2
             class="font-bold text-clamp-6xl text-balance md:text-start text-center dark:text-white"
           >
@@ -105,14 +110,15 @@
         </div>
 
         <figure
-          class="flex justify-center items-center relative overflow-visible h-full md:h-auto"
+          class="flex justify-center items-center w-dvw relative overflow-visible h-full md:h-auto"
         >
-          <div class="circle--red bottom-[5%] left-28 z-[1]"></div>
+          <div class="circle--red bottom-[5%] right-1/2 z-[1]"></div>
+
           <svg
             width="300"
             height="480"
             viewBox="0 0 300 480"
-            class="absolute -top-32 right-[10%] -rotate-[38deg]"
+            class="absolute -top-16 md:left-[40%] -rotate-[38deg]"
           >
             <ellipse
               cx="150"
@@ -128,7 +134,7 @@
             width="300"
             height="480"
             viewBox="0 0 300 480"
-            class="absolute -top-10 right-[10%] -rotate-[38deg]"
+            class="absolute top-6 md:left-[40%] -rotate-[38deg]"
           >
             <ellipse
               cx="150"
@@ -144,7 +150,7 @@
             width="300"
             height="480"
             viewBox="0 0 300 480"
-            class="absolute top-20 right-[10%] -rotate-[38deg]"
+            class="absolute top-32 md:left-[40%] -rotate-[38deg]"
           >
             <ellipse
               cx="150"
@@ -159,7 +165,7 @@
 
           <img
             src="./src/assets/img/phone.webp"
-            class="min-h-[200px] h-4/5 max-h-[calc(100dvh-80px)] -rotate-12 relative left-40 -top-20 md:left-64 z-[3]"
+            class="min-h-[200px] h-4/5 max-h-[calc(100dvh-80px)] -rotate-12 relative -right-48 -top-20 md:left-64 z-[3]"
             alt=""
           />
           <img
@@ -167,10 +173,9 @@
             class="min-h-[200px] h-4/5 max-h-[calc(100dvh-80px)] -rotate-12 relative left-0 -top-10 md:left-4 z-[2]"
             alt=""
           />
-
           <img
             src="./src/assets/img/phone.webp"
-            class="min-h-[200px] h-4/5 max-h-[calc(100dvh-80px)] -rotate-12 relative -left-40 md:-left-56 top-0 z-[1]"
+            class="min-h-[200px] h-4/5 max-h-[calc(100dvh-80px)] -rotate-12 relative right-[200px] md:-left-56 top-0 z-[1]"
             alt=""
           />
           <figcaption></figcaption>
