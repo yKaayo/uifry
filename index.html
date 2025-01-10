@@ -6,7 +6,7 @@
     <title>Uifry</title>
 
     <!-- Animate CSS -->
-    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
 
     <!-- Bootstrap Icons -->
     <link
@@ -79,21 +79,19 @@
       </header>
 
       <section
-        class="min-h-[calc(100dvh-160px)] md:h-dvh grid-cols-1 md:grid-cols-[55%,45%] py-[80px] grid place-items-center container mx-auto gap-10 overflow-y-clip"
+        class="min-h-[calc(100dvh-160px)] md:h-dvh grid-cols-1 md:grid-cols-[55%,45%] py-[80px] grid place-items-center container mx-auto px-5 md:px-10 gap-10 overflow-y-visible"
       >
-      <div
-        class="circle--red right-1 md:right-[60%] bottom-[60%] z-[1]"
-      ></div>
         <div
-          class="flex flex-col md:items-start items-center mx-5 md:mx-10 gap-5 relative z-[1] animate__animated animate__fadeInLeft"
-        >
+          class="circle--red right-1 md:right-[60%] top-[4%] md:top-[20%] z-[1]"
+        ></div>
+        <div class="hero__left animate__animated">
           <h2
             class="font-bold text-clamp-6xl text-balance md:text-start text-center dark:text-white"
           >
             Make The Best Financial Decisions
           </h2>
           <p
-            class="text-balance text-center md:text-start text-[#57585f] dark:text-gray-300"
+            class="text-balance text-center md:text-start text-light-gray dark:text-gray-300"
           >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
             ducimus voluptatibus nobis, accusantium eligendi laborum pariatur
@@ -110,7 +108,7 @@
         </div>
 
         <figure
-          class="flex justify-center items-center w-dvw relative overflow-visible h-full md:h-auto"
+          class="flex justify-center items-center w-dvw relative overflow-visible h-full md:h-auto md:ms-20"
         >
           <div class="circle--red bottom-[5%] right-1/2 z-[1]"></div>
 
@@ -165,26 +163,79 @@
 
           <img
             src="./src/assets/img/phone.webp"
-            class="min-h-[200px] h-4/5 max-h-[calc(100dvh-80px)] -rotate-12 relative -right-48 -top-20 md:left-64 z-[3]"
+            class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative -right-48 -top-20 md:left-64 z-[3]"
             alt=""
           />
           <img
             src="./src/assets/img/phone.webp"
-            class="min-h-[200px] h-4/5 max-h-[calc(100dvh-80px)] -rotate-12 relative left-0 -top-10 md:left-4 z-[2]"
+            class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative left-0 -top-10 md:left-4 z-[2]"
             alt=""
           />
           <img
             src="./src/assets/img/phone.webp"
-            class="min-h-[200px] h-4/5 max-h-[calc(100dvh-80px)] -rotate-12 relative right-[200px] md:-left-56 top-0 z-[1]"
+            class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative right-[200px] md:-left-56 top-0 z-[1]"
             alt=""
           />
           <figcaption></figcaption>
         </figure>
       </section>
 
-      <!-- <section class="min-h-[calc(100dvh-80px)]">
+      <!-- <section class="min-h-[calc(100dvh-80px)]"></section> -->
 
-      </section> -->
+      <footer class="footer">
+        <div class="flex flex-col items-start gap-3">
+          <h3 class="footer__title">UIFRY</h3>
+          <div class="flex flex-col gap-2">
+            <p class="footer__paragraph">
+              <i class="bi bi-envelope text-orange-600 font-semibold me-2"></i
+              >email@email.com
+            </p>
+            <p class="footer__paragraph">
+              <i class="bi bi-telephone text-orange-600 font-semibold me-2"></i
+              >(12) 99345-6789
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-col items-start gap-3">
+          <h3 class="footer__title">Links</h3>
+          <nav class="flex flex-col gap-2">
+            <a href="#home" class="footer__link">Home</a>
+            <a href="#aboutus" class="footer__link">About Us</a>
+            <a href="#" class="footer__link">Bookings</a>
+            <a href="#" class="footer__link">Blog</a>
+          </nav>
+        </div>
+        <div class="flex flex-col items-start gap-3">
+          <h3 class="footer__title">Legal</h3>
+          <div class="flex flex-col gap-2">
+            <p href="#home" class="footer__paragraph">Terms of Use</p>
+            <p href="#aboutus" class="footer__paragraph">About Us</p>
+            <p href="#" class="footer__paragraph">Bookings</p>
+            <p href="#" class="footer__paragraph">Blog</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-start gap-3">
+          <h3 class="footer__title">Product</h3>
+          <div class="flex flex-col gap-2">
+            <p class="footer__paragraph">Take Tour</p>
+            <p class="footer__paragraph">Live Chat</p>
+          </div>
+        </div>
+        <div class="flex flex-col items-start gap-3 col-span-2">
+          <h3 class="footer__title">Newsletter</h3>
+          <div class="flex flex-col gap-2">
+            <p class="footer__paragraph">Stay Up To Date</p>
+            <div class="flex items-center gap-1">
+              <input
+                class="text-black dark:text-white bg-transparent border-black h-12 focus:ring-black focus:border-none"
+                type="text"
+                placeholder="Your email"
+              />
+              <a href="#" class="btn--dark">Subscribe</a>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <!-- Flowbite -->

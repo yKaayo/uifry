@@ -4,7 +4,7 @@
 
 /* Header */
 .nav__menu {
-  @apply flex flex-col p-4 gap-3 text-black font-medium md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:flex-row md:mb-0 md:p-0 md:gap-0 dark:border-gray-700 bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent;
+  @apply flex flex-col p-4 gap-3 text-black font-medium md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:flex-row md:mb-0 md:p-0 md:gap-0 dark:border-light-gray bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent;
 }
 
 .nav__link {
@@ -17,7 +17,41 @@
 /* Header - End */
 
 /* Hero */
+.hero__left {
+  @apply flex flex-col md:items-start items-center gap-5 relative z-[1];
+}
+
+@media (width < 768px) {
+  .hero__left {
+    animation: fadeInDown 1.6s;
+  }
+}
+
+@media (width >= 768px) {
+  .hero__left {
+    animation: fadeInLeft 1.6s;
+  }
+}
+
 .circle--red {
   @apply bg-gradient-to-b from-red-600 via-orange-600 to-yellow-300 opacity-90 rounded-full blur-xl h-52 w-72  absolute;
 }
 /* Hero - End */
+
+/* Footer */
+.footer {
+  @apply container mx-auto grid grid-cols-[repeat(2,_fit-content(200px))] sm:grid-cols-[repeat(3,fit-content(200px))] gap-10 lg:grid-cols-[repeat(6,fit-content(200px))] p-5 md:p-10 justify-center sm:justify-between;
+}
+
+.footer__title {
+  @apply text-3xl font-bold text-black dark:text-white;
+}
+
+.footer__paragraph {
+  @apply text-sm text-light-gray dark:text-gray-300;
+}
+
+.footer__link {
+  @apply footer__paragraph hover:text-red-600 duration-500;
+}
+/* Footer - End */

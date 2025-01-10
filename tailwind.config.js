@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        'light-gray': '#57585f'
+      },
       fontSize: {
         'clamp-6xl': 'clamp(36px, 4vw, 60px)'
       },
