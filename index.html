@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uifry</title>
 
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
-
     <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
@@ -19,12 +16,12 @@
   </head>
   <body>
     <main class="bg-white dark:bg-black overflow-x-hidden">
-      <header class="fixed top-0 w-dvw z-[4]">
+      <header class="fixed top-0 w-dvw z-10">
         <div
-          class="h-20 absolute z-[3] w-dvw bg-gradient-to-b from-white dark:from-black to-transparent"
+          class="h-20 absolute w-dvw bg-gradient-to-b from-white dark:from-black to-transparent"
         ></div>
         <nav
-          class="container mx-auto block md:flex justify-between items-center p-4 z-[10] h-20 w-full relative"
+          class="container mx-auto block md:flex justify-between items-center p-4 z-[1] h-20 w-full relative"
         >
           <div class="flex justify-between items-center w-full md:w-fit">
             <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -79,14 +76,15 @@
       </header>
 
       <section
-        class="min-h-[calc(100dvh-160px)] md:h-dvh grid-cols-1 md:grid-cols-[55%,45%] pt-20 pb-10 grid place-items-center container mx-auto px-5 md:px-10 gap-10 overflow-y-visible"
+        class="min-h-[calc(100dvh-160px)] md:h-dvh grid-cols-1 md:grid-cols-[55%,45%] pt-20 pb-5 grid place-items-center container mx-auto px-5 md:px-10 gap-10 overflow-y-visible"
       >
-
-      <!-- Left -->
+        <!-- Left -->
         <div
           class="circle--red right-1 md:right-[60%] top-[4%] md:top-[20%] z-[1]"
         ></div>
-        <div class="hero__left animate__animated">
+        <div
+          class="flex flex-col md:items-start items-center gap-5 relative z-[2]"
+        >
           <h2
             class="font-bold text-clamp-6xl text-balance md:text-start text-center dark:text-white"
           >
@@ -111,15 +109,15 @@
 
         <!-- Right -->
         <figure
-          class="flex justify-center items-center w-dvw relative overflow-visible h-full md:h-auto md:ms-20"
+          class="flex justify-center items-center w-full relative overflow-visible h-full md:h-auto md:ms-20"
         >
-          <div class="circle--red bottom-[5%] right-1/2 z-[1]"></div>
+          <div class="circle--red top-1/2 left-2 z-[1]"></div>
 
           <svg
             width="300"
             height="480"
             viewBox="0 0 300 480"
-            class="absolute -top-10 md:left-[40%] -rotate-[38deg]"
+            class="absolute -top-10 md:-top-20 -rotate-[38deg]"
           >
             <ellipse
               cx="150"
@@ -135,7 +133,7 @@
             width="300"
             height="480"
             viewBox="0 0 300 480"
-            class="absolute top-6 md:left-[40%] -rotate-[38deg]"
+            class="absolute top-0 md:-top-10 -rotate-[38deg]"
           >
             <ellipse
               cx="150"
@@ -151,7 +149,7 @@
             width="300"
             height="480"
             viewBox="0 0 300 480"
-            class="absolute top-16 md:left-[40%] -rotate-[38deg]"
+            class="absolute top-10 md:top-0 -rotate-[38deg]"
           >
             <ellipse
               cx="150"
@@ -171,7 +169,7 @@
           />
           <img
             src="./src/assets/img/phone.webp"
-            class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative left-0 -top-10 md:left-4 z-[2]"
+            class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative -top-10 md:left-4 z-[2]"
             alt=""
           />
           <img
@@ -184,10 +182,12 @@
       </section>
 
       <section
-        class="min-h-[calc(100dvh-80px)] py-10 grid justify-between grid-cols-1 md:grid-cols-[45%,55%] px-5 md:px-10 gap-10"
+        class="min-h-[calc(100dvh-80px)] py-5 container mx-auto grid justify-between grid-cols-1 md:grid-cols-[45%,55%] px-5 md:px-10 gap-10"
       >
         <!-- Bottom - Left -->
-        <div class="flex justify-center items-center min-h-[50svh] h-full relative order-2 md:order-1">
+        <div
+          class="flex justify-center items-center min-h-[50svh] h-full relative order-2 md:order-1"
+        >
           <div class="circle--red"></div>
 
           <svg
@@ -247,49 +247,156 @@
         </div>
 
         <!-- Top - Right -->
-        <div class="flex flex-col items-center md:items-start justify-center order-1 md:order-2">
+        <div
+          class="flex items-center justify-center order-1 md:ms-5 xl:ms-32 2xl:ms-56 md:order-2 relative"
+        >
+          <div class="circle--red -right-48 md:-right-10 top-[5%]"></div>
+          <div
+            class="flex flex-col items-center md:items-start justify-center z-[1] gap-2"
+          >
+            <div class="flex flex-col">
+              <h3 class="text-orange-600 font-semibold">FEATURES</h3>
+              <h2 class="section__title">Uifry Premium</h2>
+            </div>
+
+            <div class="flex flex-col gap-5 items-end">
+              <article
+                class="flex flex-col items-center md:items-start justify-center"
+              >
+                <h4 class="section__subtitle">
+                  <img
+                    src="./src/assets/svg/9025039_star_four_light_icon.svg"
+                    class="h-4 me-1"
+                    alt="Star Icon"
+                  />Budgeting Intervals
+                </h4>
+                <p class="paragraph text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Accusamus iste dolores deleniti debitis placeat voluptate.
+                </p>
+              </article>
+
+              <article
+                class="flex flex-col items-center md:items-start justify-center"
+              >
+                <h4 class="section__subtitle">
+                  <i class="bi bi-virus text-orange-600 me-1"></i>Budgeting
+                  Intervals
+                </h4>
+                <p class="paragraph text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Accusamus iste dolores deleniti debitis placeat voluptate.
+                </p>
+              </article>
+
+              <article
+                class="flex flex-col items-center md:items-start justify-center"
+              >
+                <h4 class="section__subtitle">
+                  <i class="bi bi-box text-orange-600 me-1"></i>Budgeting
+                  Intervals
+                </h4>
+                <p class="paragraph text-center">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Accusamus iste dolores deleniti debitis placeat voluptate.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="min-h-[calc(100dvh-80px)] py-5 container mx-auto grid justify-between grid-cols-1 md:grid-cols-[55%,45%] px-5 md:px-10 gap-10"
+      >
+        <!-- Left -->
+        <div
+          class="flex flex-col items-center justify-center relative md:items-start z-[1] gap-2"
+        >
           <div class="flex flex-col">
-            <h3 class="text-orange-600 font-semibold">FEATURES</h3>
-            <h2 class="section__title">Uifry Premium</h2>
+            <h3 class="text-orange-600 font-semibold">ADVANTAGES</h3>
+            <h2 class="section__title">Why Chhose Uifry?</h2>
           </div>
 
-          <div class="flex flex-col gap-5">
-            <article class="flex flex-col items-center md:items-start">
+          <div class="flex flex-col gap-5 items-end">
+            <article
+              class="flex flex-col items-center md:items-start justify-center gap-1"
+            >
               <h4 class="section__subtitle">
-                <img
-                  src="./src/assets/svg/9025039_star_four_light_icon.svg"
-                  class="h-4 me-1"
-                  alt="Star Icon"
-                />Budgeting Intervals
+                <span class="flex items-center justify-center me-2 h-8 w-8 rounded-full bg-orange-600"><i class="bi bi-bell text-white "></i></span>
+                Clever Notifications
               </h4>
-              <p class="paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusamus iste dolores deleniti debitis placeat voluptate.
-              </p>
-            </article>
-
-            <article class="flex flex-col items-center md:items-start">
-              <h4 class="section__subtitle">
-                <i class="bi bi-virus text-orange-600 me-1"></i>Budgeting
-                Intervals
-              </h4>
-              <p class="paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusamus iste dolores deleniti debitis placeat voluptate.
-              </p>
-            </article>
-
-            <article class="flex flex-col items-center md:items-start">
-              <h4 class="section__subtitle">
-                <i class="bi bi-box text-orange-600 me-1"></i>Budgeting
-                Intervals
-              </h4>
-              <p class="paragraph">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Accusamus iste dolores deleniti debitis placeat voluptate.
+              <p class="paragraph text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+                repellendus mollitia voluptatem ea eaque eum nobis, porro
+                consectetur cupiditate ratione! Explicabo qui incidunt nesciunt.
+                Qui explicabo nihil laudantium, sequi facilis vero accusamus
+                veritatis nulla ad laborum, repellendus non fugit illo?
               </p>
             </article>
           </div>
+        </div>
+
+        <!-- Right -->
+        <div
+          class="flex justify-center items-center min-h-[50svh] h-full relative"
+        >
+          <div class="circle--red"></div>
+
+          <svg
+            width="300"
+            height="480"
+            viewBox="0 0 300 480"
+            class="absolute -top-10 h-full -rotate-[38deg] z-[1]"
+          >
+            <ellipse
+              cx="150"
+              cy="240"
+              rx="150"
+              ry="240"
+              stroke-width="1"
+              fill="none"
+              class="stroke-black dark:stroke-white"
+            />
+          </svg>
+          <svg
+            width="300"
+            height="480"
+            viewBox="0 0 300 480"
+            class="absolute h-full -rotate-[38deg] z-[1]"
+          >
+            <ellipse
+              cx="150"
+              cy="240"
+              rx="150"
+              ry="240"
+              stroke-width="1"
+              fill="none"
+              class="stroke-black dark:stroke-white"
+            />
+          </svg>
+          <svg
+            width="300"
+            height="480"
+            viewBox="0 0 300 480"
+            class="absolute h-full top-10 -rotate-[38deg] z-[1]"
+          >
+            <ellipse
+              cx="150"
+              cy="240"
+              rx="150"
+              ry="240"
+              stroke-width="1"
+              fill="none"
+              class="stroke-black dark:stroke-white"
+            />
+          </svg>
+
+          <img
+            src="./src/assets/img/phone.webp"
+            class="min-h-[200px] h-full max-h-[calc(100svh-80px)] -rotate-12 top-0 absolute z-[2]"
+            alt=""
+          />
         </div>
       </section>
 
