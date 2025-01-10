@@ -79,8 +79,10 @@
       </header>
 
       <section
-        class="min-h-[calc(100dvh-160px)] md:h-dvh grid-cols-1 md:grid-cols-[55%,45%] py-[80px] grid place-items-center container mx-auto px-5 md:px-10 gap-10 overflow-y-visible"
+        class="min-h-[calc(100dvh-160px)] md:h-dvh grid-cols-1 md:grid-cols-[55%,45%] pt-20 pb-10 grid place-items-center container mx-auto px-5 md:px-10 gap-10 overflow-y-visible"
       >
+
+      <!-- Left -->
         <div
           class="circle--red right-1 md:right-[60%] top-[4%] md:top-[20%] z-[1]"
         ></div>
@@ -107,6 +109,7 @@
           </div>
         </div>
 
+        <!-- Right -->
         <figure
           class="flex justify-center items-center w-dvw relative overflow-visible h-full md:h-auto md:ms-20"
         >
@@ -116,7 +119,7 @@
             width="300"
             height="480"
             viewBox="0 0 300 480"
-            class="absolute -top-16 md:left-[40%] -rotate-[38deg]"
+            class="absolute -top-10 md:left-[40%] -rotate-[38deg]"
           >
             <ellipse
               cx="150"
@@ -148,7 +151,7 @@
             width="300"
             height="480"
             viewBox="0 0 300 480"
-            class="absolute top-32 md:left-[40%] -rotate-[38deg]"
+            class="absolute top-16 md:left-[40%] -rotate-[38deg]"
           >
             <ellipse
               cx="150"
@@ -180,7 +183,115 @@
         </figure>
       </section>
 
-      <!-- <section class="min-h-[calc(100dvh-80px)]"></section> -->
+      <section
+        class="min-h-[calc(100dvh-80px)] py-10 grid justify-between grid-cols-1 md:grid-cols-[45%,55%] px-5 md:px-10 gap-10"
+      >
+        <!-- Bottom - Left -->
+        <div class="flex justify-center items-center min-h-[50svh] h-full relative order-2 md:order-1">
+          <div class="circle--red"></div>
+
+          <svg
+            width="300"
+            height="480"
+            viewBox="0 0 300 480"
+            class="absolute -top-10 h-full -rotate-[38deg] z-[1]"
+          >
+            <ellipse
+              cx="150"
+              cy="240"
+              rx="150"
+              ry="240"
+              stroke-width="1"
+              fill="none"
+              class="stroke-black dark:stroke-white"
+            />
+          </svg>
+          <svg
+            width="300"
+            height="480"
+            viewBox="0 0 300 480"
+            class="absolute h-full -rotate-[38deg] z-[1]"
+          >
+            <ellipse
+              cx="150"
+              cy="240"
+              rx="150"
+              ry="240"
+              stroke-width="1"
+              fill="none"
+              class="stroke-black dark:stroke-white"
+            />
+          </svg>
+          <svg
+            width="300"
+            height="480"
+            viewBox="0 0 300 480"
+            class="absolute h-full top-10 -rotate-[38deg] z-[1]"
+          >
+            <ellipse
+              cx="150"
+              cy="240"
+              rx="150"
+              ry="240"
+              stroke-width="1"
+              fill="none"
+              class="stroke-black dark:stroke-white"
+            />
+          </svg>
+
+          <img
+            src="./src/assets/img/phone.webp"
+            class="min-h-[200px] h-full max-h-[calc(100svh-80px)] -rotate-12 top-0 absolute z-[2]"
+            alt=""
+          />
+        </div>
+
+        <!-- Top - Right -->
+        <div class="flex flex-col items-center md:items-start justify-center order-1 md:order-2">
+          <div class="flex flex-col">
+            <h3 class="text-orange-600 font-semibold">FEATURES</h3>
+            <h2 class="section__title">Uifry Premium</h2>
+          </div>
+
+          <div class="flex flex-col gap-5">
+            <article class="flex flex-col items-center md:items-start">
+              <h4 class="section__subtitle">
+                <img
+                  src="./src/assets/svg/9025039_star_four_light_icon.svg"
+                  class="h-4 me-1"
+                  alt="Star Icon"
+                />Budgeting Intervals
+              </h4>
+              <p class="paragraph">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusamus iste dolores deleniti debitis placeat voluptate.
+              </p>
+            </article>
+
+            <article class="flex flex-col items-center md:items-start">
+              <h4 class="section__subtitle">
+                <i class="bi bi-virus text-orange-600 me-1"></i>Budgeting
+                Intervals
+              </h4>
+              <p class="paragraph">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusamus iste dolores deleniti debitis placeat voluptate.
+              </p>
+            </article>
+
+            <article class="flex flex-col items-center md:items-start">
+              <h4 class="section__subtitle">
+                <i class="bi bi-box text-orange-600 me-1"></i>Budgeting
+                Intervals
+              </h4>
+              <p class="paragraph">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusamus iste dolores deleniti debitis placeat voluptate.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <footer class="footer">
         <div class="flex flex-col items-start gap-3">
@@ -227,7 +338,7 @@
             <p class="footer__paragraph">Stay Up To Date</p>
             <div class="flex items-center gap-1">
               <input
-                class="text-black dark:text-white bg-transparent border-black h-12 focus:ring-black focus:border-none"
+                class="text-black dark:text-white bg-transparent border-black dark:border-white h-12 focus:ring-black dark:focus:ring-white focus:border-none"
                 type="text"
                 placeholder="Your email"
               />
