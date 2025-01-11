@@ -25,12 +25,24 @@
   @apply flex items-center text-xl font-semibold dark:text-black text-white;
 }
 
+.ticket__subtitle--bg-red {
+  @apply flex items-center text-xl font-semibold text-black;
+}
+
 .ticket__paragraph {
-  @apply dark:text-light-gray text-gray-300 text-balance md:text-start;
+  @apply dark:text-light-gray text-gray-300 text-sm sm:text-base text-balance md:text-start;
+}
+
+.ticket__paragraph--bg-red {
+  @apply text-black text-sm sm:text-base text-balance md:text-start;
 }
 
 .paragraph {
   @apply text-light-gray dark:text-gray-300 text-balance md:text-start;
+}
+
+.trapezoid {
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
 }
 /* Hero - End */
 
