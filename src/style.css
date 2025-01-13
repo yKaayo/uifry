@@ -68,7 +68,7 @@
 
 /* Download */
 .title--light {
-  @apply text-3xl text-center font-bold text-balance dark:text-black text-white;
+  @apply text-3xl text-center md:text-start font-bold text-balance dark:text-black text-white;
 }
 
 .download__paragraph {

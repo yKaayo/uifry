@@ -40,8 +40,8 @@ if (window.innerWidth <= 768) {
       scale: 1,
       scrollTrigger: {
         trigger: box,
-        start: "top 90%",
-        end: "bottom 90%",
+        start: "top 80%",
+        end: "50% 50%",
         scrub: true,
         markers: false,
       },
