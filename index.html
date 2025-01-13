@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uifry</title>
 
+    <!-- Website Icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <!-- Bootstrap Icons -->
     <link
       rel="stylesheet"
@@ -78,7 +81,7 @@
       <!-- Hero -->
       <section
         id="home"
-        class="md:h-vh grid-cols-1 md:grid-cols-[55%,45%] md:grid-rows-[calc(100vh-80px), 40vh] pt-20 pb-5 md:pb-0 grid place-items-center container mx-auto px-5 md:px-10 gap-10 overflow-y-visible"
+        class="md:h-vh grid-cols-1 md:grid-cols-[55%,45%] md:grid-rows-[calc(100vh-80px),40vh] pt-20 pb-5 md:pb-0 grid place-items-center container mx-auto px-5 md:px-10 gap-10 overflow-y-visible"
       >
         <div
           class="circle--red right-1 md:right-[60%] top-[4%] md:top-[20%] z-[1]"
@@ -108,6 +111,7 @@
           </div>
         </div>
 
+        <!-- Mobiles -->
         <figure
           class="flex justify-center items-center w-full relative overflow-visible h-full md:h-auto md:ms-20 md:pt-52"
         >
@@ -166,31 +170,45 @@
             src="./src/assets/img/phone.webp"
             class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative -right-48 -top-20 md:left-64 z-[3]"
             alt=""
+            loading="lazy"
           />
           <img
             src="./src/assets/img/phone.webp"
             class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative -top-10 md:left-4 z-[2]"
             alt=""
+            loading="lazy"
           />
           <img
             src="./src/assets/img/phone.webp"
             class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative right-[200px] md:-left-56 top-0 z-[1]"
             alt=""
+            loading="lazy"
           />
           <figcaption></figcaption>
         </figure>
 
+        <!-- Ticket -->
         <div class="h-fit w-full relative flex flex-col items-center">
           <div
-            class="h-20 w-[434px] sm:w-[636px] md:w-[480px] lg:w-[636px] bg-black dark:bg-white -rotate-[30deg] relative flex items-center z-[2] rounded-e-lg shadow-md top-0 -right-2 md:-right-4 sm:right-2"
+            class="h-20 w-[368px] sm:w-[636px] md:w-[386px] lg:w-[568px] bg-black dark:bg-white -rotate-[30deg] relative flex items-center z-[2] rounded-e-lg shadow-md top-0 -right-2 sm:-right-2 px-4 gap-3"
           >
-            <p
-              class="font-bold text-[111.3px] text-black dark:text-white relative -top-2 right-12"
+            <?xml version="1.0" ?><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              class="h-[calc(100%+12px)] w-min absolute z-[-1] -top-[6px] -left-14"
             >
-              A
-            </p>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.39854 1H10.6014L15 15H11.8503L10.9089 12H5.09104L4.14966 15H1L5.39854 1ZM8.39854 4L9.9675 9H6.03242L7.60139 4H8.39854Z"
+                class="dark:fill-white fill-black"
+              />
+            </svg>
 
-            <div class="flex items-center gap-2 mx-2 md:5 relative right-16">
+            <div class="flex items-center gap-2">
               <div
                 class="border-2 h-10 min-w-10 rounded-full flex items-center justify-center border-red-600"
               >
@@ -202,7 +220,7 @@
               </div>
             </div>
 
-            <div class="flex items-center gap-2 mx-2 md:5 relative right-16">
+            <div class="flex items-center gap-2">
               <div
                 class="border-2 h-10 min-w-10 rounded-full flex items-center justify-center border-red-600"
               >
@@ -216,7 +234,7 @@
           </div>
 
           <div
-            class="h-20 w-[468px] bg-red-600 -rotate-[45deg] relative -top-4 md:-top-6 -right-4 md:-right-10 sm:-right-[88px] sm:-top-16 lg:-right-28 lg:-top-[66px] rounded-lg z-[1] shadow-md"
+            class="h-20 w-[468px] bg-red-600 -rotate-[45deg] relative -top-0 right-2 sm:-right-[106px] sm:-top-16 md:-right-0 md:-top-1 lg:-right-20 lg:-top-[50px] rounded-lg z-[1] shadow-md"
           >
             <div class="flex items-center gap-2 ms-14 me-28 h-full">
               <h4 class="ticket__subtitle--bg-red">
@@ -226,14 +244,15 @@
           </div>
 
           <div
-            class="h-20 w-fit min-w-[280px] bg-red-600 relative top-14 md:top-12 -right-10 md:-right-16 sm:top-2 sm:-right-[116px] lg:top-1 lg:-right-[138px] rounded-lg trapezoid shadow-md"
+            class="h-20 w-[340px] bg-red-600 relative top-[72px] -right-6 sm:top-2 sm:-right-[138px] md:-right-7 md:top-[68px] lg:top-6 lg:-right-[108px] rounded-lg trapezoid shadow-md"
           >
-            <div class="flex items-center gap-2 ms-24 me-5 h-full">
+            <div class="flex items-center gap-2 ms-[90px] me-5 h-full">
               <div class="bg-black h-full w-[2px]"></div>
               <img
                 src="./src/assets/svg/star_black_filled_icon.svg"
-                class="h-full py-3"
+                class="h-full py-4"
                 alt=""
+                loading="lazy"
               />
               <div class="bg-black h-full w-[2px]"></div>
               <div class="flex flex-col justify-center">
@@ -309,6 +328,7 @@
             src="./src/assets/img/phone.webp"
             class="min-h-[200px] h-full max-h-[calc(100svh-80px)] -rotate-12 top-0 absolute z-[2]"
             alt=""
+            loading="lazy"
           />
         </div>
 
@@ -318,7 +338,7 @@
         >
           <div class="circle--red -right-48 md:-right-10 top-[5%]"></div>
           <div
-            class="flex flex-col items-center md:items-start justify-center z-[1] gap-2"
+            class="top-to-bottom right-to-left flex flex-col items-center md:items-start justify-center z-[1] gap-2"
           >
             <div class="flex flex-col">
               <h3 class="text-red-600 font-semibold">FEATURES</h3>
@@ -334,6 +354,7 @@
                     src="./src/assets/svg/star_icon.svg"
                     class="h-4 me-1"
                     alt="Star Icon"
+                    loading="lazy"
                   />Budgeting Intervals
                 </h4>
                 <p class="paragraph text-center">
@@ -377,7 +398,7 @@
       >
         <!-- Left -->
         <div
-          class="flex flex-col items-center justify-center relative md:items-start z-[1] gap-2"
+          class="top-to-bottom left-to-right flex flex-col items-center justify-center relative md:items-start z-[1] gap-2"
         >
           <div class="flex flex-col">
             <h3 class="text-red-600 font-semibold">ADVANTAGES</h3>
@@ -465,6 +486,7 @@
             src="./src/assets/img/phone.webp"
             class="min-h-[200px] h-full max-h-[calc(100svh-80px)] -rotate-12 top-0 absolute z-[2]"
             alt=""
+            loading="lazy"
           />
         </div>
       </section>
@@ -531,6 +553,7 @@
             src="./src/assets/img/phone.webp"
             class="min-h-[200px] h-full max-h-[calc(100svh-80px)] -rotate-12 top-0 absolute z-[2]"
             alt=""
+            loading="lazy"
           />
         </div>
 
@@ -540,7 +563,7 @@
         >
           <div class="circle--red -right-48 md:-right-10 top-[5%]"></div>
           <div
-            class="flex flex-col items-center md:items-start justify-center z-[1] gap-2"
+            class="top-to-bottom right-to-left flex flex-col items-center md:items-start justify-center z-[1] gap-2"
           >
             <div class="flex flex-col gap-5 items-end">
               <article
@@ -552,7 +575,8 @@
                     ><img
                       src="./src/assets/svg/star_filled_icon.svg"
                       class="p-1"
-                      alt="Star Icon" /></span
+                      alt="Star Icon"
+                      loading="lazy" /></span
                   >Fully Customizable
                 </h4>
                 <p class="paragraph text-center">
@@ -574,7 +598,7 @@
         id="aboutus"
         class="flex flex-col items-center justify-center px-5 py-20 min-h-[calc(100vh-80px)] container mx-auto md:px-10"
       >
-        <h3 class="text-red-600 font-semibold">TESTIMONIAL</h3>
+        <h3 class="text-red-600 font-semibold auto-show">TESTIMONIAL</h3>
         <h2 class="section__title">What Our Users<br />Say About Us?</h2>
 
         <div
@@ -711,7 +735,7 @@
           class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-10 md:mt-10 gap-y-3 gap-x-5"
         >
           <article
-            class="flex flex-col items-center md:items-start justify-center bg-red-600 p-4 rounded-lg order-1"
+            class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center bg-red-600 p-4 rounded-lg order-1 "
           >
             <h4 class="faq__subtitle--bg-red mb-2">
               The Best Financial Accounting App Ever!
@@ -724,7 +748,7 @@
           </article>
 
           <article
-            class="flex flex-col items-center md:items-start justify-center p-4 rounded-lg order-2"
+            class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center p-4 rounded-lg order-2"
           >
             <h4 class="section__subtitle mb-2">
               The Best Financial Accounting App Ever!
@@ -737,7 +761,7 @@
           </article>
 
           <article
-            class="flex flex-col items-center md:items-start justify-center bg-red-600 p-4 rounded-lg order-3 md:order-4 xl:order-3"
+            class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center bg-red-600 p-4 rounded-lg order-3 md:order-4 xl:order-3"
           >
             <h4 class="faq__subtitle--bg-red mb-2">
               The Best Financial Accounting App Ever!
@@ -750,7 +774,7 @@
           </article>
 
           <article
-            class="flex flex-col items-center md:items-start justify-center p-4 rounded-lg order-4 md:order-3 xl:order-4"
+            class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center p-4 rounded-lg order-4 md:order-3 xl:order-4"
           >
             <h4 class="section__subtitle mb-2">
               The Best Financial Accounting App Ever!
@@ -763,7 +787,7 @@
           </article>
 
           <article
-            class="flex flex-col items-center md:items-start justify-center bg-red-600 p-4 rounded-lg order-5"
+            class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center bg-red-600 p-4 rounded-lg order-5"
           >
             <h4 class="faq__subtitle--bg-red mb-2">
               The Best Financial Accounting App Ever!
@@ -776,7 +800,7 @@
           </article>
 
           <article
-            class="flex flex-col items-center md:items-start justify-center p-4 rounded-lg order-6"
+            class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center p-4 rounded-lg order-6"
           >
             <h4 class="section__subtitle mb-2">
               The Best Financial Accounting App Ever!
@@ -791,134 +815,134 @@
       </section>
 
       <!-- Download -->
-      <section
-        id="pricing"
-        class="h-[calc(100vh-80px)] container mx-auto pt-5"
-      >
-      <div class="md:px-20 min-h-full bg-black dark:bg-white overflow-hidden grid rounded-lg grid-cols-1 md:grid-cols-[55%,45%] gap-10 px-10 py-5 md:py-10 mx-3">
-        <!-- Left -->
-        <div class="flex justify-center items-center relative">
-          <div
-            class="flex flex-col justify-center items-center md:items-start gap-3"
-          >
-            <h2 class="title--light">Ready To Get Started?</h2>
-            <p class="download__paragraph text-center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Quibusdam, sit?
-            </p>
-            <a href="#" class="btn--light flex items-center"
-              >Download App<i
-                class="bi bi-apple ms-1 text-xl relative -top-[2px]"
-              ></i
-            ></a>
+      <section id="pricing" class="h-[calc(100vh-80px)] container mx-auto pt-5">
+        <div
+          class="md:px-20 min-h-full bg-black dark:bg-white overflow-hidden grid rounded-lg grid-cols-1 md:grid-cols-[55%,45%] gap-10 px-10 py-5 md:py-10 mx-3"
+        >
+          <!-- Left -->
+          <div class="flex justify-center items-center relative z-[2]">
+            <div
+              class="flex flex-col justify-center items-center md:items-start gap-3"
+            >
+              <h2 class="title--light">Ready To Get Started?</h2>
+              <p class="download__paragraph text-center">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Quibusdam, sit?
+              </p>
+              <a href="#" class="btn--light flex items-center"
+                >Download App<i
+                  class="bi bi-apple ms-1 text-xl relative -top-[2px]"
+                ></i
+              ></a>
+            </div>
+
+            <svg
+              width="300"
+              height="480"
+              viewBox="0 0 300 480"
+              class="absolute -left-32 top-[268px] -rotate-45 z-[1]"
+            >
+              <ellipse
+                cx="150"
+                cy="240"
+                rx="150"
+                ry="240"
+                stroke-width="1"
+                fill="none"
+                class="dark:stroke-black stroke-white"
+              />
+            </svg>
+            <svg
+              width="300"
+              height="480"
+              viewBox="0 0 300 480"
+              class="absolute -left-40 top-72 -rotate-45 z-[1]"
+            >
+              <ellipse
+                cx="150"
+                cy="240"
+                rx="150"
+                ry="240"
+                stroke-width="1"
+                fill="none"
+                class="dark:stroke-black stroke-white"
+              />
+            </svg>
+            <svg
+              width="300"
+              height="480"
+              viewBox="0 0 300 480"
+              class="absolute -left-48 top-[308px] -rotate-45 z-[1]"
+            >
+              <ellipse
+                cx="150"
+                cy="240"
+                rx="150"
+                ry="240"
+                stroke-width="1"
+                fill="none"
+                class="dark:stroke-black stroke-white"
+              />
+            </svg>
           </div>
 
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute -left-32 top-[268px] -rotate-45 z-[1]"
+          <!-- Right -->
+          <div
+            class="flex justify-center items-center min-h-[50svh] h-full relative"
           >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="dark:stroke-black stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute -left-40 top-72 -rotate-45 z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="dark:stroke-black stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute -left-48 top-[308px] -rotate-45 z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="dark:stroke-black stroke-white"
-            />
-          </svg>
-        </div>
+            <div class="circle--red -right-10"></div>
 
-        <!-- Right -->
-        <div
-          class="flex justify-center items-center min-h-[50svh] h-full relative"
-        >
-          <div class="circle--red -right-10"></div>
+            <svg
+              width="300"
+              height="480"
+              viewBox="0 0 300 480"
+              class="absolute -top-[404px] -right-60 h-full -rotate-[38deg] z-[1]"
+            >
+              <ellipse
+                cx="150"
+                cy="240"
+                rx="150"
+                ry="240"
+                stroke-width="1"
+                fill="none"
+                class="dark:stroke-black stroke-white"
+              />
+            </svg>
+            <svg
+              width="300"
+              height="480"
+              viewBox="0 0 300 480"
+              class="absolute h-full -top-96 -right-52 -rotate-[38deg] z-[1]"
+            >
+              <ellipse
+                cx="150"
+                cy="240"
+                rx="150"
+                ry="240"
+                stroke-width="1"
+                fill="none"
+                class="dark:stroke-black stroke-white"
+              />
+            </svg>
+            <svg
+              width="300"
+              height="480"
+              viewBox="0 0 300 480"
+              class="absolute h-full -top-[364px] -right-44 -rotate-[38deg] z-[1]"
+            >
+              <ellipse
+                cx="150"
+                cy="240"
+                rx="150"
+                ry="240"
+                stroke-width="1"
+                fill="none"
+                class="dark:stroke-black stroke-white"
+              />
+            </svg>
 
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute -top-[404px] -right-60 h-full -rotate-[38deg] z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="dark:stroke-black stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute h-full -top-96 -right-52 -rotate-[38deg] z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="dark:stroke-black stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute h-full -top-[364px] -right-44 -rotate-[38deg] z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="dark:stroke-black stroke-white"
-            />
-          </svg>
+          </div>
         </div>
-      </div>
       </section>
 
       <footer class="footer">

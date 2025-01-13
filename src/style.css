@@ -97,3 +97,16 @@
   @apply footer__paragraph hover:text-red-600 duration-500;
 }
 /* Footer - End */
+
+/* Scroll Animation */
+.top-to-bottom {
+  @apply opacity-0 scale-75 top-[200px] md:top-0 relative;
+}
+
+.right-to-left {
+  @apply md:left-[200px]; 
+}
+
+.left-to-right {
+  @apply md:right-[200px];
+}
