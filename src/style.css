@@ -56,6 +56,15 @@
 }
 /* Sections - End */
 
+/* Testimonial */
+.testimonial__people {
+  @apply opacity-40 hover:scale-150 duration-500 cursor-pointer
+}
+.testimonial__people.active {
+  @apply opacity-100 scale-150
+}
+/* Testimonial - End */
+
 /* FAQ */
 .faq__subtitle--bg-red {
   @apply flex items-center text-xl text-center md:text-start text-balance font-semibold text-white;
