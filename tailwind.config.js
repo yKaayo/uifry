@@ -14,6 +14,9 @@ export default {
       fontSize: {
         'clamp-6xl': 'clamp(36px, 4vw, 60px)'
       },
+      fontFamily: {
+        sans: ['"Poppins", sans-serif'],
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

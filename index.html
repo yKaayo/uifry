@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="A Financial Website that Offers Best Decision">
-    <meta name="robots" content="none">
+    <meta name="robots" content="">
     <title>Uifry</title>
 
     <!-- Website Icon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./src/assets/img/logo_icon.ico" type="image/x-icon" />
 
     <!-- Bootstrap Icons -->
     <link
@@ -21,6 +21,7 @@
   </head>
   <body>
     <main class="bg-white dark:bg-black overflow-x-hidden">
+      <!-- Header -->
       <header class="fixed top-0 w-dvw z-10">
         <div
           class="h-20 absolute w-dvw bg-gradient-to-b from-white dark:from-black to-transparent"
@@ -29,10 +30,10 @@
           class="container mx-auto block md:flex justify-between items-center p-4 z-[1] h-20 w-full relative"
         >
           <div class="flex justify-between items-center w-full md:w-fit">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse" aria-label="Return to top of the page">
               <span
-                class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-                >UIFRY</span
+                class="flex items-center text-2xl font-semibold dark:text-white"
+                ><img src="./src/assets/img/logo_icon.ico" class="h-12 me-[-8px]" alt="Website Logo">UIFRY</span
               >
             </a>
             <button
@@ -53,16 +54,16 @@
           >
             <ul class="nav__menu">
               <li>
-                <a href="#home" class="nav__link" aria-current="page">Home</a>
+                <a href="#home" class="nav__link" aria-current="page" aria-label="Go to home page">Home</a>
               </li>
               <li>
-                <a href="#aboutus" class="nav__link">About Us</a>
+                <a href="#aboutus" class="nav__link" aria-label="Go to about us section">About Us</a>
               </li>
               <li>
-                <a href="#pricing" class="nav__link">Pricing</a>
+                <a href="#pricing" class="nav__link" aria-label="Go to princing section">Pricing</a>
               </li>
               <li>
-                <a href="#features" class="nav__link">Features</a>
+                <a href="#features" class="nav__link" aria-label="Go to features section">Features</a>
               </li>
             </ul>
             <div
@@ -72,7 +73,7 @@
                 id="theme-toggle"
                 class="px-4 py-2 border-2 hover:border-gray-200 hover:bg-transparent dark:hover:border-gray-700 bg-gray-200 dark:bg-gray-700 dark:border-gray-700 dark:hover:bg-transparent text-gray-900 dark:text-gray-200 rounded-lg duration-300"
               >
-                <i class="bi bi-brightness-high"></i>
+                <i class="bi bi-moon"></i>
               </button>
               <button class="btn--dark">DOWNLOAD</button>
             </div>
@@ -105,10 +106,10 @@
           </p>
           <div class="flex items-center gap-3 md:gap-5 mt-3">
             <a href="#" class="btn--dark"
-              >Get Started<i class="bi bi-arrow-right ms-2 text-md"></i
+              >Get Started<i class="bi bi-arrow-right ms-2 text-md" aria-label="Get the Uifry services"></i
             ></a>
             <a href="#" class="dark:text-white px-2"
-              ><i class="bi bi-play-circle me-2 text-lg"></i>Watch Video</a
+              ><i class="bi bi-play-circle me-2 text-lg" aria-label="Check out more of the Uifry services watching a video"></i>Watch Video</a
             >
           </div>
         </div>
@@ -189,7 +190,7 @@
         <!-- Ticket -->
         <div class="h-fit w-full relative flex flex-col items-center">
           <div
-            class="h-20 w-[368px] sm:w-[636px] md:w-[386px] lg:w-[568px] bg-black dark:bg-white -rotate-[30deg] relative flex items-center z-[2] rounded-e-lg shadow-md top-0 -right-2 sm:-right-2 px-4 gap-3"
+            class="h-20 w-[400px] sm:w-[636px] md:w-[386px] lg:w-[568px] bg-black dark:bg-white -rotate-[30deg] relative flex items-center z-[2] rounded-e-lg shadow-md top-0 -right-2 sm:-right-2 px-4 gap-3"
           >
             <?xml version="1.0" ?><svg
               xmlns="http://www.w3.org/2000/svg"
@@ -243,7 +244,7 @@
           </div>
 
           <div
-            class="h-20 w-[340px] bg-red-600 relative top-[72px] -right-6 sm:top-2 sm:-right-[138px] md:-right-7 md:top-[68px] lg:top-6 lg:-right-[108px] rounded-lg trapezoid shadow-md"
+            class="h-20 w-[340px] bg-red-600 relative top-[72px] -right-5 sm:top-2 sm:-right-[138px] md:-right-7 md:top-[68px] lg:top-6 lg:-right-[108px] rounded-lg trapezoid shadow-md"
           >
             <div class="flex items-center gap-2 ms-[90px] me-5 h-full">
               <div class="bg-black h-full w-[2px]"></div>
@@ -914,7 +915,7 @@
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Quibusdam, sit?
             </p>
-            <a href="#" class="btn--light flex items-center"
+            <a href="#" class="btn--light flex items-center" aria-label="Download the app"
               >Download App<i
                 class="bi bi-apple ms-1 text-xl relative -top-[2px]"
               ></i
@@ -1001,9 +1002,10 @@
         </div>
       </section>
 
+      <!-- Footer -->
       <footer class="footer">
         <div class="flex flex-col items-start gap-3">
-          <h3 class="footer__title">UIFRY</h3>
+          <h3 class="footer__title"><img src="./src/assets/img/logo_icon.ico" class="h-12 ms-[-16px] me-[-8px] contrast-150" alt="Website Logo">UIFRY</h3>
           <div class="flex flex-col gap-2">
             <p class="footer__paragraph">
               <i class="bi bi-envelope text-red-600 font-semibold me-2"></i
@@ -1018,10 +1020,10 @@
         <div class="flex flex-col items-start gap-3">
           <h3 class="footer__title">Links</h3>
           <nav class="flex flex-col gap-2">
-            <a href="#home" class="footer__link">Home</a>
-            <a href="#aboutus" class="footer__link">About Us</a>
-            <a href="#" class="footer__link">Bookings</a>
-            <a href="#" class="footer__link">Blog</a>
+            <a href="#home" class="footer__link" aria-label="Go to the home page">Home</a>
+            <a href="#aboutus" class="footer__link" aria-label="Go to the about us section">About Us</a>
+            <a href="#" class="footer__link" aria-label="Go to bookings section">Bookings</a>
+            <a href="#" class="footer__link" aria-label="Go to the Uifry blog">Blog</a>
           </nav>
         </div>
         <div class="flex flex-col items-start gap-3">
@@ -1050,7 +1052,7 @@
                 type="text"
                 placeholder="Your email"
               />
-              <a href="#" class="btn--dark">Subscribe</a>
+              <a href="#" class="btn--dark" aria-label="Receive information about Uifry">Subscribe</a>
             </div>
           </div>
         </div>
