@@ -5,10 +5,8 @@ UIFRY é um site financeiro que oferece as melhores decisões financeiras para s
 ## Funcionalidades
 
 - **Tema Escuro/Claro**: Alterna entre temas escuros e claros para melhor usabilidade.
-- **Seção Hero**: Apresenta o slogan do site e botões de ação.
-- **Seção de Recursos**: Destaca os principais recursos do aplicativo UIFRY Premium.
-- **Seção de Vantagens**: Mostra as conquistas e vantagens do aplicativo.
-- **Imagens Responsivas**: Exibe imagens de dispositivos móveis de forma atraente e responsiva.
+- **Responsividade**: Totalmente responsivo para os dispositivos.
+- **Acessibilidade**: Website com recursos de acessibilidade.
 
 ## Tecnologias Utilizadas
 
@@ -29,7 +27,7 @@ UIFRY é um site financeiro que oferece as melhores decisões financeiras para s
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/uifry.git
+   git clone https://github.com/yKaayo/uifry.git
 
 2. Escreva esse comando no terminal:
     ```bash
