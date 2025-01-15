@@ -3,12 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A Financial Website that Offers Best Decision">
-    <meta name="robots" content="">
+    <meta
+      name="description"
+      content="A Financial Website that Offers Best Decision"
+    />
+    <meta name="keywords" content="Finances" />
+    <meta name="author" content="Kaayo" />
+    <meta name="robots" content="" />
     <title>Uifry</title>
 
     <!-- Website Icon -->
-    <link rel="shortcut icon" href="./src/assets/img/logo_icon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/img/logo_icon.ico"
+      type="image/x-icon"
+    />
 
     <!-- Bootstrap Icons -->
     <link
@@ -19,415 +28,692 @@
     <!-- Tailwind -->
     <link rel="stylesheet" href="./src/style.css" />
   </head>
-  <body>
-    <main class="bg-white dark:bg-black overflow-x-hidden">
-      <!-- Header -->
-      <header class="fixed top-0 w-dvw z-10">
+  <body class="bg-white dark:bg-black overflow-x-hidden">
+    <!-- Header -->
+    <header class="fixed top-0 w-dvw z-10">
+      <div
+        class="h-20 absolute w-dvw bg-gradient-to-b from-white dark:from-black to-transparent"
+      ></div>
+      <nav
+        class="container mx-auto block md:flex justify-between items-center p-4 z-[1] h-20 w-full relative"
+      >
+        <div class="flex justify-between items-center w-full md:w-fit">
+          <a
+            href="#"
+            class="flex items-center space-x-3 rtl:space-x-reverse"
+            aria-label="Return to top of the page"
+          >
+            <span
+              class="flex items-center text-2xl font-semibold dark:text-white"
+              ><img
+                src="./src/assets/img/logo_icon.ico"
+                class="h-12 me-[-8px]"
+                alt="Website Logo"
+              />UIFRY</span
+            >
+          </a>
+          <button
+            id="menuButton"
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="flex justify-center items-center size-12 rounded-lg text-black dark:text-white focus:ring-1 focus:ring-black duration-300 dark:focus:ring-white md:hidden"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <i class="bi bi-justify-right text-2xl"></i>
+          </button>
+        </div>
+
         <div
-          class="h-20 absolute w-dvw bg-gradient-to-b from-white dark:from-black to-transparent"
-        ></div>
-        <nav
-          class="container mx-auto block md:flex justify-between items-center p-4 z-[1] h-20 w-full relative"
+          class="hidden w-full md:flex md:items-center justify-between md:w-4/5 lg:w-[68%] md:gap-5 border border-gray-100 md:border-none mt-5 md:mt-0"
+          id="navbar-default"
         >
-          <div class="flex justify-between items-center w-full md:w-fit">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse" aria-label="Return to top of the page">
-              <span
-                class="flex items-center text-2xl font-semibold dark:text-white"
-                ><img src="./src/assets/img/logo_icon.ico" class="h-12 me-[-8px]" alt="Website Logo">UIFRY</span
+          <ul class="nav__menu">
+            <li>
+              <a
+                href="#home"
+                class="nav__link"
+                aria-current="page"
+                aria-label="Go to home page"
+                >Home</a
               >
-            </a>
+            </li>
+            <li>
+              <a
+                href="#aboutus"
+                class="nav__link"
+                aria-label="Go to about us section"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#pricing"
+                class="nav__link"
+                aria-label="Go to princing section"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a
+                href="#features"
+                class="nav__link"
+                aria-label="Go to features section"
+                >Features</a
+              >
+            </li>
+          </ul>
+          <div
+            class="flex items-center px-5 md:px-0 py-5 gap-5 h-20 bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent"
+          >
             <button
-              id="menuButton"
-              data-collapse-toggle="navbar-default"
-              type="button"
-              class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-              aria-controls="navbar-default"
-              aria-expanded="false"
+              id="theme-toggle"
+              class="flex justify-center items-center size-11 rounded-lg text-black dark:text-white ring-2 ring-black hover:text-white duration-300 hover:bg-black dark:hover:bg-white dark:ring-white dark:hover:text-black"
             >
-              <i class="bi bi-justify-right text-2xl"></i>
+              <i class="bi bi-moon text-xl"></i>
             </button>
+            <button class="btn--dark">DOWNLOAD</button>
           </div>
+        </div>
+      </nav>
+    </header>
 
-          <div
-            class="hidden w-full md:flex md:items-center justify-between md:w-4/5 lg:w-[68%] md:gap-5 border border-gray-100 md:border-none mt-5 md:mt-0"
-            id="navbar-default"
+    <!-- Hero -->
+    <main
+      id="home"
+      class="md:h-vh grid-cols-1 md:grid-cols-[55%,45%] md:grid-rows-[calc(100vh-80px),40vh] pt-20 pb-5 md:pb-0 grid place-items-center container mx-auto px-5 md:px-10 gap-10 overflow-y-visible"
+    >
+      <div
+        class="circle--red right-1 md:right-[60%] top-[4%] md:top-[20%] z-[1]"
+      ></div>
+      <div
+        class="flex flex-col md:items-start items-center gap-5 relative z-[2]"
+      >
+        <h2
+          class="font-bold text-clamp-6xl text-balance md:text-start text-center dark:text-white"
+        >
+          Make The Best Financial Decisions
+        </h2>
+        <p
+          class="text-balance text-center md:text-start text-light-gray dark:text-gray-300"
+        >
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          ducimus voluptatibus nobis, accusantium eligendi laborum pariatur
+          optio eaque ea consectetur?
+        </p>
+        <div class="flex items-center gap-3 md:gap-5 mt-3">
+          <a href="#" class="btn--dark"
+            >Get Started<i
+              class="bi bi-arrow-right ms-2 text-md"
+              aria-label="Get the Uifry services"
+            ></i
+          ></a>
+          <a href="#" class="dark:text-white px-2"
+            ><i
+              class="bi bi-play-circle me-2 text-lg"
+              aria-label="Check out more of the Uifry services watching a video"
+            ></i
+            >Watch Video</a
           >
-            <ul class="nav__menu">
-              <li>
-                <a href="#home" class="nav__link" aria-current="page" aria-label="Go to home page">Home</a>
-              </li>
-              <li>
-                <a href="#aboutus" class="nav__link" aria-label="Go to about us section">About Us</a>
-              </li>
-              <li>
-                <a href="#pricing" class="nav__link" aria-label="Go to princing section">Pricing</a>
-              </li>
-              <li>
-                <a href="#features" class="nav__link" aria-label="Go to features section">Features</a>
-              </li>
-            </ul>
+        </div>
+      </div>
+
+      <!-- Mobiles -->
+      <figure
+        class="flex justify-center items-center w-full relative overflow-visible h-full md:h-auto md:ms-20 md:pt-52"
+      >
+        <div class="circle--red top-1/2 left-2 z-[1]"></div>
+
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute -top-10 md:top-[80px] -rotate-[38deg]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="stroke-black dark:stroke-white"
+          />
+        </svg>
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute top-0 md:top-[120px] -rotate-[38deg]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="stroke-black dark:stroke-white"
+          />
+        </svg>
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute top-10 md:top-40 -rotate-[38deg]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="stroke-black dark:stroke-white"
+          />
+        </svg>
+
+        <img
+          src="./src/assets/img/phone.webp"
+          class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative -right-48 -top-20 md:left-64 z-[3]"
+          alt="Phone"
+        />
+        <img
+          src="./src/assets/img/phone.webp"
+          class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative -top-10 md:left-4 z-[2]"
+          alt="Phone"
+        />
+        <img
+          src="./src/assets/img/phone.webp"
+          class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative right-[200px] md:-left-56 top-0 z-[1]"
+          alt="Phone"
+        />
+
+        <figcaption
+          class="absolute bottom-20 right-[20%] md:bottom-3 md:right-4 text-black dark:text-white text-xs dark:opacity-25"
+        >
+          Designed by
+          <a
+            href="www.freepik.com"
+            class="text-blue-900 dark:text-blue-500 underline duration-300"
+            >Freepik</a
+          >
+        </figcaption>
+      </figure>
+
+      <!-- Ticket -->
+      <div class="h-fit w-full relative flex flex-col items-center">
+        <div
+          class="h-20 w-[400px] sm:w-[636px] md:w-[386px] lg:w-[568px] bg-black dark:bg-white -rotate-[30deg] relative flex items-center z-[2] rounded-e-lg shadow-md top-0 -right-2 sm:-right-2 px-4 gap-3"
+        >
+          <?xml version="1.0" ?><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            class="h-[calc(100%+12px)] w-min absolute z-[-1] -top-[6px] -left-14"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5.39854 1H10.6014L15 15H11.8503L10.9089 12H5.09104L4.14966 15H1L5.39854 1ZM8.39854 4L9.9675 9H6.03242L7.60139 4H8.39854Z"
+              class="dark:fill-white fill-black"
+            />
+          </svg>
+
+          <div class="flex items-center gap-2">
             <div
-              class="flex items-center px-5 md:px-0 py-5 gap-5 h-20 bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent"
+              class="border-2 h-10 min-w-10 rounded-full flex items-center justify-center border-light-red dark:border-dark-red"
             >
-              <button
-                id="theme-toggle"
-                class="px-4 py-2 border-2 hover:border-gray-200 hover:bg-transparent dark:hover:border-gray-700 bg-gray-200 dark:bg-gray-700 dark:border-gray-700 dark:hover:bg-transparent text-gray-900 dark:text-gray-200 rounded-lg duration-300"
-              >
-                <i class="bi bi-moon"></i>
-              </button>
-              <button class="btn--dark">DOWNLOAD</button>
+              <i
+                class="bi bi-trophy text-xl text-light-red dark:text-dark-red"
+              ></i>
+            </div>
+            <div class="flex flex-col">
+              <h4 class="ticket__subtitle">Achievements</h4>
+              <p class="ticket__paragraph">Best Finance App On Playstore</p>
             </div>
           </div>
-        </nav>
-      </header>
 
-      <!-- Hero -->
-      <section
-        id="home"
-        class="md:h-vh grid-cols-1 md:grid-cols-[55%,45%] md:grid-rows-[calc(100vh-80px),40vh] pt-20 pb-5 md:pb-0 grid place-items-center container mx-auto px-5 md:px-10 gap-10 overflow-y-visible"
-      >
-        <div
-          class="circle--red right-1 md:right-[60%] top-[4%] md:top-[20%] z-[1]"
-        ></div>
-        <div
-          class="flex flex-col md:items-start items-center gap-5 relative z-[2]"
-        >
-          <h2
-            class="font-bold text-clamp-6xl text-balance md:text-start text-center dark:text-white"
-          >
-            Make The Best Financial Decisions
-          </h2>
-          <p
-            class="text-balance text-center md:text-start text-light-gray dark:text-gray-300"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
-            ducimus voluptatibus nobis, accusantium eligendi laborum pariatur
-            optio eaque ea consectetur?
-          </p>
-          <div class="flex items-center gap-3 md:gap-5 mt-3">
-            <a href="#" class="btn--dark"
-              >Get Started<i class="bi bi-arrow-right ms-2 text-md" aria-label="Get the Uifry services"></i
-            ></a>
-            <a href="#" class="dark:text-white px-2"
-              ><i class="bi bi-play-circle me-2 text-lg" aria-label="Check out more of the Uifry services watching a video"></i>Watch Video</a
+          <div class="flex items-center gap-2">
+            <div
+              class="border-2 h-10 min-w-10 rounded-full flex items-center justify-center border-light-red dark:border-dark-red"
             >
+              <i
+                class="bi bi-table text-xl text-light-red dark:text-dark-red"
+              ></i>
+            </div>
+            <div class="flex flex-col">
+              <h4 class="ticket__subtitle">Finance</h4>
+              <p class="ticket__paragraph">Most Popular Accounting App</p>
+            </div>
           </div>
         </div>
 
-        <!-- Mobiles -->
-        <figure
-          class="flex justify-center items-center w-full relative overflow-visible h-full md:h-auto md:ms-20 md:pt-52"
+        <div
+          class="h-20 w-[468px] bg-dark-red -rotate-[45deg] relative -top-0 right-2 sm:-right-[106px] sm:-top-16 md:-right-0 md:-top-1 lg:-right-20 lg:-top-[50px] rounded-lg z-[1] shadow-md"
         >
-          <div class="circle--red top-1/2 left-2 z-[1]"></div>
-
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute -top-10 md:top-[80px] -rotate-[38deg]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="stroke-black dark:stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute top-0 md:top-[120px] -rotate-[38deg]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="stroke-black dark:stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute top-10 md:top-40 -rotate-[38deg]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="stroke-black dark:stroke-white"
-            />
-          </svg>
-
-          <img
-            src="./src/assets/img/phone.webp"
-            class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative -right-48 -top-20 md:left-64 z-[3]"
-            alt="Phone"
-          />
-          <img
-            src="./src/assets/img/phone.webp"
-            class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative -top-10 md:left-4 z-[2]"
-            alt="Phone"
-          />
-          <img
-            src="./src/assets/img/phone.webp"
-            class="min-h-[200px] h-[70%] max-h-[calc(100svh-80px)] -rotate-12 relative right-[200px] md:-left-56 top-0 z-[1]"
-            alt="Phone"
-          />
-          <figcaption></figcaption>
-        </figure>
-
-        <!-- Ticket -->
-        <div class="h-fit w-full relative flex flex-col items-center">
-          <div
-            class="h-20 w-[400px] sm:w-[636px] md:w-[386px] lg:w-[568px] bg-black dark:bg-white -rotate-[30deg] relative flex items-center z-[2] rounded-e-lg shadow-md top-0 -right-2 sm:-right-2 px-4 gap-3"
-          >
-            <?xml version="1.0" ?><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
-              fill="none"
-              class="h-[calc(100%+12px)] w-min absolute z-[-1] -top-[6px] -left-14"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M5.39854 1H10.6014L15 15H11.8503L10.9089 12H5.09104L4.14966 15H1L5.39854 1ZM8.39854 4L9.9675 9H6.03242L7.60139 4H8.39854Z"
-                class="dark:fill-white fill-black"
-              />
-            </svg>
-
-            <div class="flex items-center gap-2">
-              <div
-                class="border-2 h-10 min-w-10 rounded-full flex items-center justify-center border-light-red dark:border-dark-red"
-              >
-                <i class="bi bi-trophy text-xl text-light-red dark:text-dark-red"></i>
-              </div>
-              <div class="flex flex-col">
-                <h4 class="ticket__subtitle">Achievements</h4>
-                <p class="ticket__paragraph">Best Finance App On Playstore</p>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-2">
-              <div
-                class="border-2 h-10 min-w-10 rounded-full flex items-center justify-center border-light-red dark:border-dark-red"
-              >
-                <i class="bi bi-table text-xl text-light-red dark:text-dark-red"></i>
-              </div>
-              <div class="flex flex-col">
-                <h4 class="ticket__subtitle">Finance</h4>
-                <p class="ticket__paragraph">Most Popular Accounting App</p>
-              </div>
-            </div>
+          <div class="flex items-center gap-2 ms-14 me-28 h-full">
+            <h4 class="ticket__subtitle--bg-red">
+              Make The Best Financial Decision
+            </h4>
           </div>
+        </div>
 
-          <div
-            class="h-20 w-[468px] bg-dark-red -rotate-[45deg] relative -top-0 right-2 sm:-right-[106px] sm:-top-16 md:-right-0 md:-top-1 lg:-right-20 lg:-top-[50px] rounded-lg z-[1] shadow-md"
-          >
-            <div class="flex items-center gap-2 ms-14 me-28 h-full">
-              <h4 class="ticket__subtitle--bg-red">
-                Make The Best Financial Decision
-              </h4>
-            </div>
-          </div>
-
-          <div
-            class="h-20 w-[340px] bg-dark-red relative top-[72px] -right-5 sm:top-2 sm:-right-[138px] md:-right-7 md:top-[68px] lg:top-6 lg:-right-[108px] rounded-lg trapezoid shadow-md"
-          >
-            <div class="flex items-center gap-2 ms-[90px] me-5 h-full">
-              <div class="bg-black h-full w-[2px]"></div>
-              <img
-                src="./src/assets/svg/star_black_filled_icon.svg"
-                class="h-full py-4"
-                alt="Black Star Icon"
-                loading="lazy"
-              />
-              <div class="bg-black h-full w-[2px]"></div>
-              <div class="flex flex-col justify-center">
-                <h4 class="ticket__subtitle--bg-red">Uifry Premium</h4>
-                <p class="ticket__paragraph--bg-red">Free Trial</p>
-              </div>
+        <div
+          class="h-20 w-[340px] bg-dark-red relative top-[72px] -right-5 sm:top-2 sm:-right-[138px] md:-right-7 md:top-[68px] lg:top-6 lg:-right-[108px] rounded-lg trapezoid shadow-md"
+        >
+          <div class="flex items-center gap-2 ms-[90px] me-5 h-full">
+            <div class="bg-black h-full w-[2px]"></div>
+            <img
+              src="./src/assets/svg/star_black_filled_icon.svg"
+              class="h-full py-4"
+              alt="Black Star Icon"
+              loading="lazy"
+            />
+            <div class="bg-black h-full w-[2px]"></div>
+            <div class="flex flex-col justify-center">
+              <h4 class="ticket__subtitle--bg-red">Uifry Premium</h4>
+              <p class="ticket__paragraph--bg-red">Free Trial</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </main>
 
-      <!-- Features -->
-      <section
-        id="features"
-        class="min-h-[calc(100vh-80px)] py-5 container mx-auto grid justify-between grid-cols-1 md:grid-cols-[45%,55%] px-5 md:px-10 gap-10 pt-20"
+    <!-- Features -->
+    <section
+      id="features"
+      class="section grid justify-between grid-cols-1 md:grid-cols-[45%,55%] pt-20 pb-5 gap-10"
+    >
+      <!-- Bottom - Left -->
+      <div
+        class="flex justify-center items-center min-h-[50svh] h-full relative order-2 md:order-1"
       >
-        <!-- Bottom - Left -->
-        <div
-          class="flex justify-center items-center min-h-[50svh] h-full relative order-2 md:order-1"
+        <div class="circle--red"></div>
+
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute -top-10 h-full -rotate-[38deg] z-[1]"
         >
-          <div class="circle--red"></div>
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="stroke-black dark:stroke-white"
+          />
+        </svg>
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute h-full -rotate-[38deg] z-[1]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="stroke-black dark:stroke-white"
+          />
+        </svg>
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute h-full top-10 -rotate-[38deg] z-[1]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="stroke-black dark:stroke-white"
+          />
+        </svg>
 
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute -top-10 h-full -rotate-[38deg] z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="stroke-black dark:stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute h-full -rotate-[38deg] z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="stroke-black dark:stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute h-full top-10 -rotate-[38deg] z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="stroke-black dark:stroke-white"
-            />
-          </svg>
-
+        <figure>
           <img
             src="./src/assets/img/phone.webp"
-            class="min-h-[200px] h-full max-h-[calc(100svh-80px)] -rotate-12 top-0 absolute z-[2]"
+            class="min-h-[200px] h-full max-h-[calc(100svh-80px)] -rotate-12 top-0 relative z-[2]"
             alt="Phone"
             loading="lazy"
           />
-        </div>
 
-        <!-- Top - Right -->
-        <div
-          class="flex items-center justify-center order-1 md:ms-5 xl:ms-32 2xl:ms-56 md:order-2 relative"
-        >
-          <div class="circle--red -right-48 md:-right-10 top-[5%]"></div>
-          <div
-            class="top-to-bottom right-to-left flex flex-col items-center md:items-start justify-center z-[1] gap-2"
+          <figcaption
+            class="absolute bottom-6 right-[10%] md:bottom-0 text-black dark:text-white text-xs dark:opacity-25"
           >
-            <div class="flex flex-col">
-              <h3 class="text-dark-red dark:text-light-red text-[18px] font-semibold">FEATURES</h3>
-              <h2 class="section__title">Uifry Premium</h2>
-            </div>
+            Designed by
+            <a
+              href="www.freepik.com"
+              class="text-blue-900 dark:text-blue-500 underline duration-300"
+              >Freepik</a
+            >
+          </figcaption>
+        </figure>
+      </div>
 
-            <div class="flex flex-col gap-5 items-end">
-              <article
-                class="flex flex-col items-center md:items-start justify-center"
-              >
-                <h4 class="section__subtitle">
-                  <img
-                    src="./src/assets/svg/star_icon.svg"
-                    class="h-4 me-1"
-                    alt="Star Shaped Red Border"
-                    loading="lazy"
-                  />Budgeting Intervals
-                </h4>
-                <p class="paragraph text-center">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Accusamus iste dolores deleniti debitis placeat voluptate.
-                </p>
-              </article>
-
-              <article
-                class="flex flex-col items-center md:items-start justify-center"
-              >
-                <h4 class="section__subtitle">
-                  <i class="bi bi-virus text-dark-red dark:text-light-red me-1"></i>Budgeting
-                  Intervals
-                </h4>
-                <p class="paragraph text-center">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Accusamus iste dolores deleniti debitis placeat voluptate.
-                </p>
-              </article>
-
-              <article
-                class="flex flex-col items-center md:items-start justify-center"
-              >
-                <h4 class="section__subtitle">
-                  <i class="bi bi-box text-dark-red dark:text-light-red me-1"></i>Budgeting Intervals
-                </h4>
-                <p class="paragraph text-center">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Accusamus iste dolores deleniti debitis placeat voluptate.
-                </p>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Advantages -->
-      <section
-        class="min-h-[calc(100vh-80px)] py-5 container mx-auto grid justify-between grid-cols-1 md:grid-cols-[55%,45%] px-5 md:px-10 gap-10"
+      <!-- Top - Right -->
+      <div
+        class="flex items-center justify-center order-1 md:ms-5 xl:ms-32 2xl:ms-56 md:order-2 relative"
       >
-        <!-- Left -->
+        <div class="circle--red -right-48 md:-right-10 top-[5%]"></div>
         <div
-          class="top-to-bottom left-to-right flex flex-col items-center justify-center relative md:items-start z-[1] gap-2"
+          class="top-to-bottom right-to-left flex flex-col items-center md:items-start justify-center z-[1] gap-2"
         >
           <div class="flex flex-col">
-            <h3 class="text-dark-red dark:text-light-red text-[18px] font-semibold">ADVANTAGES</h3>
-            <h2 class="section__title">Why Chose Uifry?</h2>
+            <h3
+              class="text-dark-red dark:text-light-red text-[18px] font-semibold"
+            >
+              FEATURES
+            </h3>
+            <h2 class="section__title">Uifry Premium</h2>
           </div>
 
           <div class="flex flex-col gap-5 items-end">
             <article
-              class="flex flex-col items-center md:items-start justify-center gap-1"
+              class="flex flex-col items-center md:items-start justify-center"
             >
               <h4 class="section__subtitle">
-                <span
-                  class="flex items-center justify-center h-8 w-8 rounded-full bg-dark-red me-2"
-                  ><i class="bi bi-bell text-white p-1"></i
-                ></span>
-                Clever Notifications
+                <img
+                  src="./src/assets/svg/star_icon.svg"
+                  class="h-4 me-1"
+                  alt="Star Shaped Red Border"
+                  loading="lazy"
+                />Budgeting Intervals
               </h4>
               <p class="paragraph text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
-                repellendus mollitia voluptatem ea eaque eum nobis, porro
-                consectetur cupiditate ratione! Explicabo qui incidunt nesciunt.
-                Qui explicabo nihil laudantium, sequi facilis vero accusamus
-                veritatis nulla ad laborum, repellendus non fugit illo?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusamus iste dolores deleniti debitis placeat voluptate.
+              </p>
+            </article>
+
+            <article
+              class="flex flex-col items-center md:items-start justify-center"
+            >
+              <h4 class="section__subtitle">
+                <i
+                  class="bi bi-virus text-dark-red dark:text-light-red me-1"
+                ></i
+                >Budgeting Intervals
+              </h4>
+              <p class="paragraph text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusamus iste dolores deleniti debitis placeat voluptate.
+              </p>
+            </article>
+
+            <article
+              class="flex flex-col items-center md:items-start justify-center"
+            >
+              <h4 class="section__subtitle">
+                <i class="bi bi-box text-dark-red dark:text-light-red me-1"></i
+                >Budgeting Intervals
+              </h4>
+              <p class="paragraph text-center">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Accusamus iste dolores deleniti debitis placeat voluptate.
               </p>
             </article>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Right -->
+    <!-- Advantages -->
+    <section
+      class="section py-5 grid justify-between grid-cols-1 md:grid-cols-[55%,45%] gap-10"
+    >
+      <!-- Left -->
+      <div
+        class="top-to-bottom left-to-right flex flex-col items-center justify-center relative md:items-start z-[1] gap-2"
+      >
+        <div class="flex flex-col">
+          <h3
+            class="text-dark-red dark:text-light-red text-[18px] font-semibold"
+          >
+            ADVANTAGES
+          </h3>
+          <h2 class="section__title">Why Chose Uifry?</h2>
+        </div>
+
+        <div class="flex flex-col gap-5 items-end">
+          <article
+            class="flex flex-col items-center md:items-start justify-center gap-1"
+          >
+            <h4 class="section__subtitle">
+              <span
+                class="flex items-center justify-center size-8 rounded-full bg-dark-red me-2"
+                ><i class="bi bi-bell text-white p-1"></i
+              ></span>
+              Clever Notifications
+            </h4>
+            <p class="paragraph text-center">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut
+              repellendus mollitia voluptatem ea eaque eum nobis, porro
+              consectetur cupiditate ratione! Explicabo qui incidunt nesciunt.
+              Qui explicabo nihil laudantium, sequi facilis vero accusamus
+              veritatis nulla ad laborum, repellendus non fugit illo?
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div
+        class="flex justify-center items-center min-h-[50svh] h-full relative"
+      >
+        <div class="circle--red"></div>
+
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute -top-10 h-full -rotate-[38deg] z-[1]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="stroke-black dark:stroke-white"
+          />
+        </svg>
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute h-full -rotate-[38deg] z-[1]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="stroke-black dark:stroke-white"
+          />
+        </svg>
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute h-full top-10 -rotate-[38deg] z-[1]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="stroke-black dark:stroke-white"
+          />
+        </svg>
+
+        <figure>
+          <img
+            src="./src/assets/img/phone.webp"
+            class="min-h-[200px] h-full max-h-[calc(100svh-80px)] -rotate-12 top-0 relative z-[2]"
+            alt="Phone"
+            loading="lazy"
+          />
+          <figcaption
+            class="absolute bottom-6 right-[10%] md:bottom-0 text-black dark:text-white text-xs dark:opacity-25"
+          >
+            Designed by
+            <a
+              href="www.freepik.com"
+              class="text-blue-900 dark:text-blue-500 underline duration-300"
+              >Freepik</a
+            >
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section
+      class="section py-5 grid justify-between grid-cols-1 md:grid-cols-[45%,55%] gap-10"
+    >
+      <!-- Bottom - Left -->
+      <div
+        class="flex justify-center items-center min-h-[50svh] h-full relative order-2 md:order-1"
+      >
+        <div class="circle--red"></div>
+
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute -top-10 h-full -rotate-[38deg] z-[1]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="stroke-black dark:stroke-white"
+          />
+        </svg>
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute h-full -rotate-[38deg] z-[1]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="stroke-black dark:stroke-white"
+          />
+        </svg>
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute h-full top-10 -rotate-[38deg] z-[1]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="stroke-black dark:stroke-white"
+          />
+        </svg>
+
+        <figure>
+          <img
+            src="./src/assets/img/phone.webp"
+            class="min-h-[200px] h-full max-h-[calc(100svh-80px)] -rotate-12 top-0 relative z-[2]"
+            alt="Phone"
+            loading="lazy"
+          />
+
+          <figcaption
+            class="absolute bottom-6 right-[10%] md:bottom-0 text-black dark:text-white text-xs dark:opacity-25"
+          >
+            Designed by
+            <a
+              href="www.freepik.com"
+              class="text-blue-900 dark:text-blue-500 underline duration-300"
+              >Freepik</a
+            >
+          </figcaption>
+        </figure>
+      </div>
+
+      <!-- Top - Right -->
+      <div
+        class="flex items-center justify-center order-1 md:ms-5 xl:ms-32 2xl:ms-56 md:order-2 relative"
+      >
+        <div class="circle--red -right-48 md:-right-10 top-[5%]"></div>
+        <div
+          class="top-to-bottom right-to-left flex flex-col items-center md:items-start justify-center z-[1] gap-2"
+        >
+          <div class="flex flex-col gap-5 items-end">
+            <article
+              class="flex flex-col items-center md:items-start justify-center"
+            >
+              <h4 class="section__subtitle">
+                <span
+                  class="flex items-center justify-center size-8 rounded-full bg-dark-red me-2"
+                  ><img
+                    src="./src/assets/svg/star_filled_icon.svg"
+                    class="p-1"
+                    alt="White Star Icon"
+                    loading="lazy" /></span
+                >Fully Customizable
+              </h4>
+              <p class="paragraph text-center">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tenetur iste facere facilis porro provident, quis nobis velit
+                veritatis! Nam, velit? Sit quaerat distinctio libero temporibus
+                ut, cupiditate molestias aliquid facilis tempore voluptate
+                laborum suscipit ducimus blanditiis laboriosam alias nesciunt
+                repellendus?
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section
+      id="aboutus"
+      class="section flex flex-col items-center justify-center py-20"
+    >
+      <h3 class="text-dark-red dark:text-light-red font-semibold text-[18px]">
+        TESTIMONIAL
+      </h3>
+      <h2 class="section__title">What Our Users<br />Say About Us?</h2>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-[45%,55%] mt-10 md:mt-10 gap-10 items-center"
+      >
+        <!-- Left -->
         <div
           class="flex justify-center items-center min-h-[50svh] h-full relative"
         >
@@ -483,582 +769,453 @@
           </svg>
 
           <img
-            src="./src/assets/img/phone.webp"
-            class="min-h-[200px] h-full max-h-[calc(100svh-80px)] -rotate-12 top-0 absolute z-[2]"
-            alt="Phone"
+            src="./src/assets/img/person1.webp"
+            class="size-28 object-cover rounded-full border-2 border-white dark:border-black relative"
+            alt="A white man with brown hair, large beard and striped coat"
             loading="lazy"
           />
-        </div>
-      </section>
-
-      <section
-        class="min-h-[calc(100vh-80px)] py-5 container mx-auto grid justify-between grid-cols-1 md:grid-cols-[45%,55%] px-5 md:px-10 gap-10"
-      >
-        <!-- Bottom - Left -->
-        <div
-          class="flex justify-center items-center min-h-[50svh] h-full relative order-2 md:order-1"
-        >
-          <div class="circle--red"></div>
-
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute -top-10 h-full -rotate-[38deg] z-[1]"
+          <div
+            class="absolute z-[1] left-[58%] flex items-center justify-center bg-dark-red size-14 rounded-full"
           >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="stroke-black dark:stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute h-full -rotate-[38deg] z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="stroke-black dark:stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute h-full top-10 -rotate-[38deg] z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="stroke-black dark:stroke-white"
-            />
-          </svg>
+            <i class="bi bi-quote text-white text-4xl"></i>
+          </div>
 
           <img
-            src="./src/assets/img/phone.webp"
-            class="min-h-[200px] h-full max-h-[calc(100svh-80px)] -rotate-12 top-0 absolute z-[2]"
-            alt="Phone"
+            src="./src/assets/img/person2.webp"
+            class="size-16 object-cover rounded-full border-2 border-white dark:border-black absolute top-[20%] left-[8%] sm:left-[15%] md:-left-[18%] lg:left-[15%] xl:left-[20%] 2xl:left-[25%] z-[1]"
+            alt="A black woman with black hair and a white shirt"
+            loading="lazy"
+          />
+
+          <img
+            src="./src/assets/img/person3.webp"
+            class="size-16 object-cover rounded-full border-2 border-white dark:border-black absolute bottom-[20%] right-[8%] sm:right-[15%] md:-right-[18%] lg:right-[15%] xl:right-[25%] z-[1]"
+            alt="A black man with black hair, brown glasses and jeans shirt"
+            loading="lazy"
+          />
+
+          <img
+            src="./src/assets/img/person4.webp"
+            class="size-16 object-cover rounded-full border-2 border-white dark:border-black absolute top-[20%] right-[15%] sm:right-[20%] md:right-0 lg:right-[15%] xl:right-[25%] 2xl:right-[30%] z-[1]"
+            alt="A white woman with red hair and green coat"
+            loading="lazy"
+          />
+
+          <img
+            src="./src/assets/img/person5.webp"
+            class="size-16 object-cover rounded-full border-2 border-white dark:border-black absolute bottom-[20%] left-[15%] sm:left-[20%] md:left-0 lg:left-[15%] xl:left-[25%] 2xl:left-[30%] z-[1]"
+            alt="A white woman with brown hair"
             loading="lazy"
           />
         </div>
 
-        <!-- Top - Right -->
-        <div
-          class="flex items-center justify-center order-1 md:ms-5 xl:ms-32 2xl:ms-56 md:order-2 relative"
-        >
-          <div class="circle--red -right-48 md:-right-10 top-[5%]"></div>
+        <!-- Right -->
+        <article class="relative md:left-[200px] md:ps-10 lg:ps-0">
           <div
-            class="top-to-bottom right-to-left flex flex-col items-center md:items-start justify-center z-[1] gap-2"
+            class="right-to-left flex flex-col items-center md:items-start justify-center gap-5 md:opacity-0"
           >
-            <div class="flex flex-col gap-5 items-end">
-              <article
-                class="flex flex-col items-center md:items-start justify-center"
+            <h4 class="section__subtitle mb-2">
+              The Best Financial Accounting App Ever!
+            </h4>
+            <p class="paragraph text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+              magnam! Molestiae, exercitationem! Recusandae est ab incidunt
+              delectus animi dolorem! Veniam natus molestiae dolorem modi
+              voluptatibus! Asperiores velit autem dolorem libero tempora,
+              recusandae possimus ducimus veniam eius temporibus tenetur sunt.
+              Vel?
+            </p>
+            <div class="flex items-center gap-5">
+              <button class="testimonial__people active">
+                <img
+                  src="./src/assets/img/person1.webp"
+                  class="size-8 rounded-full object-cover"
+                  alt="A white man with brown hair, large beard and striped coat"
+                />
+              </button>
+              <button class="testimonial__people">
+                <img
+                  src="./src/assets/img/person2.webp"
+                  class="size-8 rounded-full object-cover"
+                  alt="A black woman with black hair and a white shirt"
+                />
+              </button>
+              <button class="testimonial__people">
+                <img
+                  src="./src/assets/img/person3.webp"
+                  class="size-8 rounded-full object-cover"
+                  alt="A black man with black hair, brown glasses and jeans shirt"
+                />
+              </button>
+              <button class="testimonial__people">
+                <img
+                  src="./src/assets/img/person4.webp"
+                  class="size-8 rounded-full object-cover"
+                  alt="A white woman with red hair and green coat"
+                />
+              </button>
+              <button class="testimonial__people">
+                <img
+                  src="./src/assets/img/person5.webp"
+                  class="size-8 rounded-full object-cover"
+                  alt="A white woman with brown hair"
+                />
+              </button>
+            </div>
+            <p id="namePerson" class="font-bold text-black dark:text-white">
+              Nick Jonas
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section flex flex-col items-center justify-center py-5">
+      <div class="flex flex-col">
+        <h3 class="text-dark-red dark:text-light-red font-semibold">FAQ</h3>
+        <h2 class="section__title">Frequently Asked<br />Question</h2>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-10 md:mt-10 gap-y-3 gap-x-5"
+      >
+        <article
+          class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center bg-dark-red p-4 rounded-lg order-1"
+        >
+          <h4 class="faq__subtitle--bg-red mb-2">
+            The Best Financial Accounting App Ever!
+          </h4>
+          <p class="paragraph--light text-center">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum, qui? Repellendus quae minima eius quia necessitatibus.
+            Reprehenderit repudiandae rerum asperiores?"
+          </p>
+        </article>
+
+        <article
+          class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center p-4 rounded-lg order-2"
+        >
+          <h4 class="section__subtitle mb-2">
+            The Best Financial Accounting App Ever!
+          </h4>
+          <p class="paragraph text-center">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum, qui? Repellendus quae minima eius quia necessitatibus.
+            Reprehenderit repudiandae rerum asperiores?"
+          </p>
+        </article>
+
+        <article
+          class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center bg-dark-red p-4 rounded-lg order-3 md:order-4 xl:order-3"
+        >
+          <h4 class="faq__subtitle--bg-red mb-2">
+            The Best Financial Accounting App Ever!
+          </h4>
+          <p class="paragraph--light text-center">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum, qui? Repellendus quae minima eius quia necessitatibus.
+            Reprehenderit repudiandae rerum asperiores?"
+          </p>
+        </article>
+
+        <article
+          class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center p-4 rounded-lg order-4 md:order-3 xl:order-4"
+        >
+          <h4 class="section__subtitle mb-2">
+            The Best Financial Accounting App Ever!
+          </h4>
+          <p class="paragraph text-center">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum, qui? Repellendus quae minima eius quia necessitatibus.
+            Reprehenderit repudiandae rerum asperiores?"
+          </p>
+        </article>
+
+        <article
+          class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center bg-dark-red p-4 rounded-lg order-5"
+        >
+          <h4 class="faq__subtitle--bg-red mb-2">
+            The Best Financial Accounting App Ever!
+          </h4>
+          <p class="paragraph--light text-center">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum, qui? Repellendus quae minima eius quia necessitatibus.
+            Reprehenderit repudiandae rerum asperiores?"
+          </p>
+        </article>
+
+        <article
+          class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center p-4 rounded-lg order-6"
+        >
+          <h4 class="section__subtitle mb-2">
+            The Best Financial Accounting App Ever!
+          </h4>
+          <p class="paragraph text-center">
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatum, qui? Repellendus quae minima eius quia necessitatibus.
+            Reprehenderit repudiandae rerum asperiores?"
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section id="pricing" class="container mx-auto py-5 px-10">
+      <div
+        class="md:px-10 min-h-[calc(100vh-80px)] h-full bg-black dark:bg-white overflow-hidden grid rounded-lg grid-cols-1 md:grid-cols-[55%,45%] md:gap-10 px-10 py-5 md:py-10 relative"
+      >
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute -left-32 -bottom-[256px] -rotate-45 z-[1]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="dark:stroke-black stroke-white"
+          />
+        </svg>
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute -left-40 -bottom-[272px] -rotate-45 z-[1]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="dark:stroke-black stroke-white"
+          />
+        </svg>
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute -left-48 -bottom-72 -rotate-45 z-[1]"
+        >
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="dark:stroke-black stroke-white"
+          />
+        </svg>
+
+        <!-- Left -->
+        <div
+          class="flex flex-col justify-center items-center md:items-start gap-3 relative z-[2]"
+        >
+          <h2 class="title--light">Ready To Get Started?</h2>
+          <p class="download__paragraph text-center">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam,
+            sit?
+          </p>
+          <a
+            href="#"
+            class="btn--light flex items-center"
+            aria-label="Download the app"
+            >Download App<i
+              class="bi bi-apple ms-1 text-xl relative -top-[2px]"
+            ></i
+          ></a>
+        </div>
+
+        <!-- Right -->
+        <div class="flex justify-center items-center h-full relative">
+          <div class="circle--red -right-10"></div>
+
+          <figure
+            class="flex justify-center items-center w-full relative overflow-visible h-full md:h-auto z-[2]"
+          >
+            <img
+              src="./src/assets/img/phone.webp"
+              class="min-h-[200px] h-[70%] max-h-[400px] rotate-[30deg] relative top-0 left-36 2xl:left-56 z-[3]"
+              alt="Phone"
+              loading="lazy"
+            />
+            <img
+              src="./src/assets/img/phone.webp"
+              class="min-h-[200px] h-[70%] max-h-[400px] rotate-6 relative left-5 xl:left-10 2xl:left-28 top-0 z-[2]"
+              alt="Phone"
+              loading="lazy"
+            />
+            <img
+              src="./src/assets/img/phone.webp"
+              class="min-h-[200px] h-[70%] max-h-[400px] -rotate-12 relative -left-40 lg:-left-24 xl:-left-16 2xl:-left-6 top-0 z-[1]"
+              alt="Phone"
+              loading="lazy"
+            />
+
+            <figcaption
+              class="absolute bottom-6 right-[10%] md:bottom-0 z-[1] dark:text-black text-white text-xs opacity-25 dark:opacity-100"
+            >
+              Designed by
+              <a
+                href="www.freepik.com"
+                class="text-blue-900 dark:text-blue-500 underline duration-300"
+                >Freepik</a
               >
-                <h4 class="section__subtitle">
-                  <span
-                    class="flex items-center justify-center h-8 w-8 rounded-full bg-dark-red me-2"
-                    ><img
-                      src="./src/assets/svg/star_filled_icon.svg"
-                      class="p-1"
-                      alt="White Star Icon"
-                      loading="lazy" /></span
-                  >Fully Customizable
-                </h4>
-                <p class="paragraph text-center">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Tenetur iste facere facilis porro provident, quis nobis velit
-                  veritatis! Nam, velit? Sit quaerat distinctio libero
-                  temporibus ut, cupiditate molestias aliquid facilis tempore
-                  voluptate laborum suscipit ducimus blanditiis laboriosam alias
-                  nesciunt repellendus?
-                </p>
-              </article>
-            </div>
-          </div>
+            </figcaption>
+          </figure>
         </div>
-      </section>
 
-      <!-- Testimonial -->
-      <section
-        id="aboutus"
-        class="flex flex-col items-center justify-center px-5 py-20 min-h-[calc(100vh-80px)] container mx-auto md:px-10"
-      >
-        <h3 class="text-dark-red dark:text-light-red font-semibold text-[18px]">TESTIMONIAL</h3>
-        <h2 class="section__title">What Our Users<br />Say About Us?</h2>
-
-        <div
-          class="grid grid-cols-1 md:grid-cols-[45%,55%] mt-10 md:mt-10 gap-10 items-center"
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute -top-72 -right-32 h-full -rotate-[38deg] z-[1]"
         >
-          <!-- Left -->
-          <div
-            class="flex justify-center items-center min-h-[50svh] h-full relative"
-          >
-            <div class="circle--red"></div>
-
-            <svg
-              width="300"
-              height="480"
-              viewBox="0 0 300 480"
-              class="absolute -top-10 h-full -rotate-[38deg] z-[1]"
-            >
-              <ellipse
-                cx="150"
-                cy="240"
-                rx="150"
-                ry="240"
-                stroke-width="1"
-                fill="none"
-                class="stroke-black dark:stroke-white"
-              />
-            </svg>
-            <svg
-              width="300"
-              height="480"
-              viewBox="0 0 300 480"
-              class="absolute h-full -rotate-[38deg] z-[1]"
-            >
-              <ellipse
-                cx="150"
-                cy="240"
-                rx="150"
-                ry="240"
-                stroke-width="1"
-                fill="none"
-                class="stroke-black dark:stroke-white"
-              />
-            </svg>
-            <svg
-              width="300"
-              height="480"
-              viewBox="0 0 300 480"
-              class="absolute h-full top-10 -rotate-[38deg] z-[1]"
-            >
-              <ellipse
-                cx="150"
-                cy="240"
-                rx="150"
-                ry="240"
-                stroke-width="1"
-                fill="none"
-                class="stroke-black dark:stroke-white"
-              />
-            </svg>
-
-            <img
-              src="./src/assets/img/person1.webp"
-              class="h-28 w-28 object-cover rounded-full border-2 border-white dark:border-black relative"
-              alt="A white man with brown hair, large beard and striped coat"
-              loading="lazy"
-            />
-            <div
-              class="absolute z-[1] left-[58%] flex items-center justify-center bg-dark-red h-14 w-14 rounded-full"
-            >
-              <i class="bi bi-quote text-white text-4xl"></i>
-            </div>
-
-            <img
-              src="./src/assets/img/person2.webp"
-              class="h-16 w-16 object-cover rounded-full border-2 border-white dark:border-black absolute top-[20%] left-[8%] sm:left-[15%] md:-left-[18%] lg:left-[15%] xl:left-[20%] 2xl:left-[25%] z-[1]"
-              alt="A black woman with black hair and a white shirt"
-              loading="lazy"
-            />
-
-            <img
-              src="./src/assets/img/person3.webp"
-              class="h-16 w-16 object-cover rounded-full border-2 border-white dark:border-black absolute bottom-[20%] right-[8%] sm:right-[15%] md:-right-[18%] lg:right-[15%] xl:right-[25%] z-[1]"
-              alt="A black man with black hair, brown glasses and jeans shirt"
-              loading="lazy"
-            />
-
-            <img
-              src="./src/assets/img/person4.webp"
-              class="h-16 w-16 object-cover rounded-full border-2 border-white dark:border-black absolute top-[20%] right-[15%] sm:right-[20%] md:right-0 lg:right-[15%] xl:right-[25%] 2xl:right-[30%] z-[1]"
-              alt="A white woman with red hair and green coat"
-              loading="lazy"
-            />
-
-            <img
-              src="./src/assets/img/person5.webp"
-              class="h-16 w-16 object-cover rounded-full border-2 border-white dark:border-black absolute bottom-[20%] left-[15%] sm:left-[20%] md:left-0 lg:left-[15%] xl:left-[25%] 2xl:left-[30%] z-[1]"
-              alt="A white woman with brown hair"
-              loading="lazy"
-            />
-          </div>
-
-          <!-- Right -->
-          <article class="relative md:left-[200px] md:ps-10 lg:ps-0">
-            <div
-              class="right-to-left flex flex-col items-center md:items-start justify-center gap-5 md:opacity-0"
-            >
-              <h4 class="section__subtitle mb-2">
-                The Best Financial Accounting App Ever!
-              </h4>
-              <p class="paragraph text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Expedita, magnam! Molestiae, exercitationem! Recusandae est ab
-                incidunt delectus animi dolorem! Veniam natus molestiae dolorem
-                modi voluptatibus! Asperiores velit autem dolorem libero
-                tempora, recusandae possimus ducimus veniam eius temporibus
-                tenetur sunt. Vel?
-              </p>
-              <div class="flex items-center gap-5">
-                <button class="testimonial__people active">
-                  <img
-                    src="./src/assets/img/person1.webp"
-                    class="h-8 w-8 rounded-full object-cover"
-                    alt="A white man with brown hair, large beard and striped coat"
-                  />
-                </button>
-                <button class="testimonial__people">
-                  <img
-                    src="./src/assets/img/person2.webp"
-                    class="h-8 w-8 rounded-full object-cover"
-                    alt="A black woman with black hair and a white shirt"
-                  />
-                </button>
-                <button class="testimonial__people">
-                  <img
-                    src="./src/assets/img/person3.webp"
-                    class="h-8 w-8 rounded-full object-cover"
-                    alt="A black man with black hair, brown glasses and jeans shirt"
-                  />
-                </button>
-                <button class="testimonial__people">
-                  <img
-                    src="./src/assets/img/person4.webp"
-                    class="h-8 w-8 rounded-full object-cover"
-                    alt="A white woman with red hair and green coat"
-                  />
-                </button>
-                <button class="testimonial__people">
-                  <img
-                    src="./src/assets/img/person5.webp"
-                    class="h-8 w-8 rounded-full object-cover"
-                    alt="A white woman with brown hair"
-                  />
-                </button>
-              </div>
-              <p id="namePerson" class="font-bold text-black dark:text-white">
-                Nick Jonas
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- FAQ -->
-      <section
-        class="flex flex-col items-center justify-center px-5 py-5 min-h-[calc(100vh-80px)] container mx-auto md:px-10"
-      >
-        <div class="flex flex-col">
-          <h3 class="text-dark-red dark:text-light-red font-semibold">FAQ</h3>
-          <h2 class="section__title">Frequently Asked<br />Question</h2>
-        </div>
-
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 mt-10 md:mt-10 gap-y-3 gap-x-5"
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="dark:stroke-black stroke-white"
+          />
+        </svg>
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute h-full -top-[272px] -right-28 -rotate-[38deg] z-[1]"
         >
-          <article
-            class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center bg-dark-red p-4 rounded-lg order-1"
-          >
-            <h4 class="faq__subtitle--bg-red mb-2">
-              The Best Financial Accounting App Ever!
-            </h4>
-            <p class="paragraph--light text-center">
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, qui? Repellendus quae minima eius quia necessitatibus.
-              Reprehenderit repudiandae rerum asperiores?"
-            </p>
-          </article>
-
-          <article
-            class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center p-4 rounded-lg order-2"
-          >
-            <h4 class="section__subtitle mb-2">
-              The Best Financial Accounting App Ever!
-            </h4>
-            <p class="paragraph text-center">
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, qui? Repellendus quae minima eius quia necessitatibus.
-              Reprehenderit repudiandae rerum asperiores?"
-            </p>
-          </article>
-
-          <article
-            class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center bg-dark-red p-4 rounded-lg order-3 md:order-4 xl:order-3"
-          >
-            <h4 class="faq__subtitle--bg-red mb-2">
-              The Best Financial Accounting App Ever!
-            </h4>
-            <p class="paragraph--light text-center">
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, qui? Repellendus quae minima eius quia necessitatibus.
-              Reprehenderit repudiandae rerum asperiores?"
-            </p>
-          </article>
-
-          <article
-            class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center p-4 rounded-lg order-4 md:order-3 xl:order-4"
-          >
-            <h4 class="section__subtitle mb-2">
-              The Best Financial Accounting App Ever!
-            </h4>
-            <p class="paragraph text-center">
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, qui? Repellendus quae minima eius quia necessitatibus.
-              Reprehenderit repudiandae rerum asperiores?"
-            </p>
-          </article>
-
-          <article
-            class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center bg-dark-red p-4 rounded-lg order-5"
-          >
-            <h4 class="faq__subtitle--bg-red mb-2">
-              The Best Financial Accounting App Ever!
-            </h4>
-            <p class="paragraph--light text-center">
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, qui? Repellendus quae minima eius quia necessitatibus.
-              Reprehenderit repudiandae rerum asperiores?"
-            </p>
-          </article>
-
-          <article
-            class="top-to-bottom md:scale-100 md:opacity-100 flex flex-col items-center md:items-start justify-center p-4 rounded-lg order-6"
-          >
-            <h4 class="section__subtitle mb-2">
-              The Best Financial Accounting App Ever!
-            </h4>
-            <p class="paragraph text-center">
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatum, qui? Repellendus quae minima eius quia necessitatibus.
-              Reprehenderit repudiandae rerum asperiores?"
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- Download -->
-      <section id="pricing" class="container mx-auto py-5 px-10">
-        <div
-          class="md:px-10 min-h-[calc(100vh-80px)] h-full bg-black dark:bg-white overflow-hidden grid rounded-lg grid-cols-1 md:grid-cols-[55%,45%] md:gap-10 px-10 py-5 md:py-10 relative"
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="dark:stroke-black stroke-white"
+          />
+        </svg>
+        <svg
+          width="300"
+          height="480"
+          viewBox="0 0 300 480"
+          class="absolute h-full -top-[256px] -right-24 -rotate-[38deg] z-[1]"
         >
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute -left-32 -bottom-[256px] -rotate-45 z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="dark:stroke-black stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute -left-40 -bottom-[272px] -rotate-45 z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="dark:stroke-black stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute -left-48 -bottom-72 -rotate-45 z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="dark:stroke-black stroke-white"
-            />
-          </svg>
+          <ellipse
+            cx="150"
+            cy="240"
+            rx="150"
+            ry="240"
+            stroke-width="1"
+            fill="none"
+            class="dark:stroke-black stroke-white"
+          />
+        </svg>
+      </div>
+    </section>
 
-          <!-- Left -->
-          <div
-            class="flex flex-col justify-center items-center md:items-start gap-3 relative z-[2]"
-          >
-            <h2 class="title--light">Ready To Get Started?</h2>
-            <p class="download__paragraph text-center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Quibusdam, sit?
-            </p>
-            <a href="#" class="btn--light flex items-center" aria-label="Download the app"
-              >Download App<i
-                class="bi bi-apple ms-1 text-xl relative -top-[2px]"
-              ></i
-            ></a>
-          </div>
-
-          <!-- Right -->
-          <div class="flex justify-center items-center h-full relative">
-            <div class="circle--red -right-10"></div>
-
-            <figure
-              class="flex justify-center items-center w-full relative overflow-visible h-full md:h-auto z-[2]"
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="flex flex-col items-start gap-3">
+        <h3 class="footer__title">
+          <img
+            src="./src/assets/img/logo_icon.ico"
+            class="h-12 ms-[-16px] me-[-8px] contrast-150"
+            alt="Website Logo"
+          />UIFRY
+        </h3>
+        <div class="flex flex-col gap-2">
+          <p class="footer__paragraph">
+            <i
+              class="bi bi-envelope text-dark-red dark:text-light-red font-semibold me-2"
+            ></i
+            >email@email.com
+          </p>
+          <p class="footer__paragraph">
+            <i
+              class="bi bi-telephone text-dark-red dark:text-light-red font-semibold me-2"
+            ></i
+            >(12) 99345-6789
+          </p>
+        </div>
+      </div>
+      <nav class="flex flex-col items-start gap-3">
+        <h3 class="footer__title">Links</h3>
+        <ul class="flex flex-col gap-2">
+          <li>
+            <a
+              href="#home"
+              class="footer__link"
+              aria-label="Go to the home page"
+              >Home</a
             >
-              <img
-                src="./src/assets/img/phone.webp"
-                class="min-h-[200px] h-[70%] max-h-[400px] rotate-[30deg] relative top-0 left-36 2xl:left-56 z-[3]"
-                alt="Phone"
-                loading="lazy"
-              />
-              <img
-                src="./src/assets/img/phone.webp"
-                class="min-h-[200px] h-[70%] max-h-[400px] rotate-6 relative left-5 xl:left-10 2xl:left-28 top-0 z-[2]"
-                alt="Phone"
-                loading="lazy"
-              />
-              <img
-                src="./src/assets/img/phone.webp"
-                class="min-h-[200px] h-[70%] max-h-[400px] -rotate-12 relative -left-40 lg:-left-24 xl:-left-16 2xl:-left-6 top-0 z-[1]"
-                alt="Phone"
-                loading="lazy"
-              />
-              <figcaption></figcaption>
-            </figure>
-          </div>
-
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute -top-72 -right-32 h-full -rotate-[38deg] z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="dark:stroke-black stroke-white"
+          </li>
+          <li>
+            <a
+              href="#aboutus"
+              class="footer__link"
+              aria-label="Go to the about us section"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer__link" aria-label="Go to bookings section"
+              >Bookings</a
+            >
+          </li>
+          <li>
+            <a href="#" class="footer__link" aria-label="Go to the Uifry blog"
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="flex flex-col items-start gap-3">
+        <h3 class="footer__title">Legal</h3>
+        <ul class="flex flex-col gap-2">
+          <li><p class="footer__paragraph">Terms of Use</p></li>
+          <li><p class="footer__paragraph">Privacy Policy</p></li>
+          <li><p class="footer__paragraph">Cokie Policy</p></li>
+        </ul>
+      </div>
+      <div class="flex flex-col items-start gap-3">
+        <h3 class="footer__title">Product</h3>
+        <ul class="flex flex-col gap-2">
+          <li><p class="footer__paragraph">Take Tour</p></li>
+          <li><p class="footer__paragraph">Live Chat</p></li>
+          <li><p class="footer__paragraph">Revelws</p></li>
+        </ul>
+      </div>
+      <div class="flex flex-col items-start gap-3 col-span-2">
+        <h3 class="footer__title">Newsletter</h3>
+        <div class="flex flex-col gap-2">
+          <label for="email" class="footer__paragraph">Stay Up To Date</label>
+          <div class="flex items-center gap-1">
+            <input
+              class="text-black dark:text-white bg-transparent border-black dark:border-white h-12 focus:border-black focus:ring-black dark:focus:ring-white duration-300 placeholder:text-zinc-600 dark:placeholder:text-zinc-400"
+              type="email"
+              id="email"
+              placeholder="Your email"
             />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute h-full -top-[272px] -right-28 -rotate-[38deg] z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="dark:stroke-black stroke-white"
-            />
-          </svg>
-          <svg
-            width="300"
-            height="480"
-            viewBox="0 0 300 480"
-            class="absolute h-full -top-[256px] -right-24 -rotate-[38deg] z-[1]"
-          >
-            <ellipse
-              cx="150"
-              cy="240"
-              rx="150"
-              ry="240"
-              stroke-width="1"
-              fill="none"
-              class="dark:stroke-black stroke-white"
-            />
-          </svg>
-        </div>
-      </section>
-
-      <!-- Footer -->
-      <footer class="footer">
-        <div class="flex flex-col items-start gap-3">
-          <h3 class="footer__title"><img src="./src/assets/img/logo_icon.ico" class="h-12 ms-[-16px] me-[-8px] contrast-150" alt="Website Logo">UIFRY</h3>
-          <div class="flex flex-col gap-2">
-            <p class="footer__paragraph">
-              <i class="bi bi-envelope text-dark-red dark:text-light-red font-semibold me-2"></i
-              >email@email.com
-            </p>
-            <p class="footer__paragraph">
-              <i class="bi bi-telephone text-dark-red dark:text-light-red font-semibold me-2"></i
-              >(12) 99345-6789
-            </p>
+            <a
+              href="#"
+              class="btn--dark"
+              aria-label="Receive information about Uifry"
+              >Subscribe</a
+            >
           </div>
         </div>
-        <div class="flex flex-col items-start gap-3">
-          <h3 class="footer__title">Links</h3>
-          <nav class="flex flex-col gap-2">
-            <a href="#home" class="footer__link" aria-label="Go to the home page">Home</a>
-            <a href="#aboutus" class="footer__link" aria-label="Go to the about us section">About Us</a>
-            <a href="#" class="footer__link" aria-label="Go to bookings section">Bookings</a>
-            <a href="#" class="footer__link" aria-label="Go to the Uifry blog">Blog</a>
-          </nav>
-        </div>
-        <div class="flex flex-col items-start gap-3">
-          <h3 class="footer__title">Legal</h3>
-          <div class="flex flex-col gap-2">
-            <p href="#home" class="footer__paragraph">Terms of Use</p>
-            <p href="#aboutus" class="footer__paragraph">About Us</p>
-            <p href="#" class="footer__paragraph">Bookings</p>
-            <p href="#" class="footer__paragraph">Blog</p>
-          </div>
-        </div>
-        <div class="flex flex-col items-start gap-3">
-          <h3 class="footer__title">Product</h3>
-          <div class="flex flex-col gap-2">
-            <p class="footer__paragraph">Take Tour</p>
-            <p class="footer__paragraph">Live Chat</p>
-          </div>
-        </div>
-        <div class="flex flex-col items-start gap-3 col-span-2">
-          <h3 class="footer__title">Newsletter</h3>
-          <div class="flex flex-col gap-2">
-            <p class="footer__paragraph">Stay Up To Date</p>
-            <div class="flex items-center gap-1">
-              <input
-                class="text-black dark:text-white bg-transparent border-black dark:border-white h-12 focus:ring-black dark:focus:ring-white focus:border-none"
-                type="text"
-                placeholder="Your email"
-              />
-              <a href="#" class="btn--dark" aria-label="Receive information about Uifry">Subscribe</a>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
 
     <!-- Flowbite -->
     <script
