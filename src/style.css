@@ -95,7 +95,7 @@
 }
 
 .paragraph--light {
-  @apply text-gray-300 text-balance md:text-start;
+  @apply text-white text-balance md:text-start;
 }
 /* FAQ - End */
 
