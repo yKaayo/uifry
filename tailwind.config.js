@@ -13,7 +13,7 @@ export default {
         'light-red': '#ff6041',
       },
       fontSize: {
-        'clamp-6xl': 'clamp(36px, 4vw, 60px)'
+        'clamp-6xl': 'clamp(2.25rem, 4vw, 3.75rem)'
       },
       fontFamily: {
         sans: ['"Poppins", sans-serif'],

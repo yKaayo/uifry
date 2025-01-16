@@ -4,7 +4,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-if (window.innerWidth <= 768) {
+if (window.innerWidth < 768) {
   gsap.utils.toArray(".top-to-bottom").forEach((box) => {
     gsap.to(box, {
       y: -200,
@@ -12,8 +12,8 @@ if (window.innerWidth <= 768) {
       scale: 1,
       scrollTrigger: {
         trigger: box,
-        start: "top 80%",
-        end: "50% center",
+        start: "top 95%",
+        end: "50% 90%",
         scrub: true,
         markers: false,
       },
@@ -21,7 +21,7 @@ if (window.innerWidth <= 768) {
   });
 }
 
-if (window.innerWidth > 768) {
+if (window.innerWidth >= 768) {
   gsap.utils.toArray(".right-to-left").forEach((box) => {
     gsap.to(box, {
       x: -200,
