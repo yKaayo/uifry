@@ -26,6 +26,30 @@
   font-display: swap;
 }
 
+/* Components */
+.btn--dark {
+  @apply px-3 py-3 md:px-4 lg:px-6 bg-black relative hover:scale-[1.06] text-white text-sm tracking-wider hover:text-black hover:bg-transparent duration-300 border-black border-2 font-bold dark:border-white dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:text-white;
+}
+
+.btn--light {
+  @apply px-3 py-3 md:px-4 lg:px-6 dark:bg-black relative hover:scale-[1.06] dark:text-white text-sm tracking-wider dark:hover:text-black hover:bg-transparent duration-300 dark:border-black border-2 font-bold border-white bg-white text-black dark:hover:bg-transparent hover:text-white;
+}
+/* Components - End */
+
+/* Scroll Animation */
+.top-to-bottom {
+  @apply opacity-0 scale-75 top-[200px] md:top-0 relative;
+}
+
+.right-to-left {
+  @apply md:left-[200px];
+}
+
+.left-to-right {
+  @apply md:right-[200px];
+}
+/* Scroll Animation - End */
+
 /* Header */
 .nav__menu {
   @apply flex flex-col p-4 gap-3 text-black font-medium md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:flex-row md:mb-0 md:p-0 md:gap-0 dark:border-light-gray bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent;
@@ -33,10 +57,6 @@
 
 .nav__link {
   @apply block py-2 px-3 rounded hover:bg-dark-red hover:text-white md:hover:bg-transparent md:border-0 md:hover:text-dark-red md:p-0 dark:text-white md:dark:hover:bg-transparent duration-500;
-}
-
-.btn--dark {
-  @apply px-3 py-3 md:px-4 lg:px-6 bg-black relative hover:scale-[1.06] text-white text-sm tracking-wider hover:text-black hover:bg-transparent duration-300 border-black border-2 font-bold dark:border-white dark:bg-white dark:text-black dark:hover:bg-transparent dark:hover:text-white;
 }
 /* Header - End */
 
@@ -111,10 +131,6 @@
 .download__paragraph {
   @apply text-gray-300 text-balance md:text-start dark:text-light-gray;
 }
-
-.btn--light {
-  @apply px-3 py-3 md:px-4 lg:px-6 dark:bg-black relative hover:scale-[1.06] dark:text-white text-sm tracking-wider dark:hover:text-black hover:bg-transparent duration-300 dark:border-black border-2 font-bold border-white bg-white text-black dark:hover:bg-transparent hover:text-white;
-}
 /* Download - End */
 
 /* Footer */
@@ -134,16 +150,3 @@
   @apply footer__paragraph hover:text-dark-red duration-500;
 }
 /* Footer - End */
-
-/* Scroll Animation */
-.top-to-bottom {
-  @apply opacity-0 scale-75 top-[200px] md:top-0 relative;
-}
-
-.right-to-left {
-  @apply md:left-[200px];
-}
-
-.left-to-right {
-  @apply md:right-[200px];
-}

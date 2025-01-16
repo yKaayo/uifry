@@ -107,12 +107,15 @@
             class="flex items-center px-5 md:px-0 py-5 gap-5 h-20 bg-white dark:bg-black md:bg-transparent dark:md:bg-transparent"
           >
             <button
-              id="theme-toggle"
+              id="themeBtn"
               class="flex justify-center items-center size-11 rounded-lg text-black dark:text-white ring-2 ring-black hover:text-white duration-300 hover:bg-black dark:hover:bg-white dark:ring-white dark:hover:text-black"
+              role="switch"
+              aria-checked="true"
+              aria-label="Switch to dark"
             >
               <i class="bi bi-moon text-xl"></i>
             </button>
-            <button class="btn--dark">DOWNLOAD</button>
+            <button class="btn--dark" tabindex="0">DOWNLOAD</button>
           </div>
         </div>
       </nav>
@@ -271,7 +274,7 @@
               ></i>
             </div>
             <div class="flex flex-col">
-              <h4 class="ticket__subtitle">Achievements</h4>
+              <h2 class="ticket__subtitle">Achievements</h2>
               <p class="ticket__paragraph">Best Finance App On Playstore</p>
             </div>
           </div>
@@ -285,7 +288,7 @@
               ></i>
             </div>
             <div class="flex flex-col">
-              <h4 class="ticket__subtitle">Finance</h4>
+              <h2 class="ticket__subtitle">Finance</h2>
               <p class="ticket__paragraph">Most Popular Accounting App</p>
             </div>
           </div>
@@ -295,9 +298,9 @@
           class="h-20 w-[468px] bg-dark-red -rotate-[45deg] relative -top-0 right-2 sm:-right-[106px] sm:-top-16 md:-right-0 md:-top-1 lg:-right-20 lg:-top-[50px] rounded-lg z-[1] shadow-md"
         >
           <div class="flex items-center gap-2 ms-14 me-28 h-full">
-            <h4 class="ticket__subtitle--bg-red">
+            <h2 class="ticket__subtitle--bg-red">
               Make The Best Financial Decision
-            </h4>
+            </h2>
           </div>
         </div>
 
@@ -314,7 +317,7 @@
             />
             <div class="bg-black h-full w-[2px]"></div>
             <div class="flex flex-col justify-center">
-              <h4 class="ticket__subtitle--bg-red">Uifry Premium</h4>
+              <h2 class="ticket__subtitle--bg-red">Uifry Premium</h2>
               <p class="ticket__paragraph--bg-red">Free Trial</p>
             </div>
           </div>
@@ -1124,13 +1127,13 @@
       <div
         class="flex flex-col items-center text-center sm:text-start sm:items-start gap-3"
       >
-        <h4 class="footer__title">
+        <h3 class="footer__title">
           <img
             src="./src/assets/img/logo_icon.ico"
             class="h-12 ms-[-1rem] me-[-.5rem] contrast-150"
             alt="Website Logo"
           />UIFRY
-        </h4>
+        </h3>
         <div class="flex flex-col gap-2">
           <p class="footer__paragraph">
             <i
@@ -1146,10 +1149,11 @@
           </p>
         </div>
       </div>
+
       <nav
         class="flex flex-col items-center text-center sm:text-start sm:items-start gap-3"
       >
-        <h4 class="footer__title">Links</h4>
+        <h3 class="footer__title">Links</h3>
         <ul class="flex flex-col gap-2">
           <li>
             <a
@@ -1179,45 +1183,52 @@
           </li>
         </ul>
       </nav>
+
       <div
         class="flex flex-col items-center text-center sm:text-start sm:items-start gap-3"
       >
-        <h4 class="footer__title">Legal</h4>
+        <h3 class="footer__title">Legal</h3>
         <ul class="flex flex-col gap-2">
           <li><p class="footer__paragraph">Terms of Use</p></li>
           <li><p class="footer__paragraph">Privacy Policy</p></li>
           <li><p class="footer__paragraph">Cokie Policy</p></li>
         </ul>
       </div>
+
       <div
         class="flex flex-col items-center text-center sm:text-start sm:items-start gap-3"
       >
-        <h4 class="footer__title">Product</h4>
+        <h3 class="footer__title">Product</h3>
         <ul class="flex flex-col gap-2">
           <li><p class="footer__paragraph">Take Tour</p></li>
           <li><p class="footer__paragraph">Live Chat</p></li>
           <li><p class="footer__paragraph">Revelws</p></li>
         </ul>
       </div>
+
       <div class="flex flex-col items-center text-center gap-3 sm:col-span-2">
-        <h4 class="footer__title">Newsletter</h4>
-        <div class="flex flex-col gap-2">
+        <h3 class="footer__title">Newsletter</h3>
+        <form id="formNewsletter" class="flex flex-col gap-2">
           <label for="email" class="footer__paragraph">Stay Up To Date</label>
-          <div class="flex items-center gap-1">
+          <div class="flex justify-center items-center gap-1">
             <input
               class="text-black dark:text-white bg-transparent border-black dark:border-white h-12 focus:border-black focus:ring-black dark:focus:ring-white duration-300 placeholder:text-zinc-600 dark:placeholder:text-zinc-400 w-40 sm:w-auto"
               type="email"
               id="email"
+              name="email"
               placeholder="Your email"
+              required
             />
-            <a
-              href="#"
+            <button
               class="btn--dark"
               aria-label="Receive information about Uifry"
-              >Subscribe</a
             >
+              Subscribe
+            </button>
           </div>
-        </div>
+
+          <div id="submitMessage"></div>
+        </form>
       </div>
     </footer>
 

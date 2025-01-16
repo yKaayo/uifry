@@ -54,12 +54,18 @@ if (window.innerWidth >= 768) {
 }
 
 // Theme Mode
-const changeThemeButton = document.querySelector("#theme-toggle");
+const changeThemeButton = document.querySelector("#themeBtn");
 
 changeThemeButton.addEventListener("click", () => {
   document.querySelector("html").classList.toggle("dark");
+
   changeThemeButton.querySelector(".bi").classList.toggle("bi-sun");
   changeThemeButton.querySelector(".bi").classList.toggle("bi-moon");
+
+  changeThemeButton.setAttribute(
+    "aria-checked",
+    (!(changeThemeButton.getAttribute("aria-checked") === "true")).toString()
+  );
 });
 
 // Toggle Menu Icon
@@ -95,4 +101,36 @@ people.forEach((person) => {
         : null;
     }
   });
+});
+
+// Newsletter Form
+document.querySelector("#formNewsletter").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const form = new FormData(e.target);
+
+  document.querySelector("#submitMessage").outerHTML = `
+    <div
+      id="submitMessage"
+      class="flex justify-start items-center w-fit px-3 py-2 text-white dark:bg-white rounded-lg shadow dark:text-black bg-black relative"
+      role="alert"
+    >
+      <p class="ms-3 text-sm" role="alert" aria-live="polite">
+        ${form.get("email")} was subscribed!
+      </p>
+      <button
+        type="button"
+        class="ms-2 -mx-1.5 -my-1.5 p-1.5 flex items-center justify-center h-8 w-8 hover:scale-125 duration-300"
+        data-dismiss-target="#submitMessage"
+        aria-label="Close"
+      >
+        <i class="bi bi-x-lg text-white dark:text-black"></i>
+      </button>
+    </div>`;
+
+  setTimeout(() => {
+    document.querySelector("#submitMessage").classList.add('hidden')
+  }, 3000);
+
+  e.target.reset();
 });
