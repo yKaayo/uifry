@@ -1,56 +1,57 @@
 // GSAP
-document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(ScrollTrigger);
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-  if (window.innerWidth < 768) {
-    gsap.utils.toArray(".top-to-bottom").forEach((box) => {
-      gsap.to(box, {
-        y: -200,
-        opacity: 1,
-        scale: 1,
-        scrollTrigger: {
-          trigger: box,
-          start: "top 95%",
-          end: "50% 90%",
-          scrub: true,
-          markers: false,
-        },
-      });
-    });
-  }
+gsap.registerPlugin(ScrollTrigger);
 
-  if (window.innerWidth >= 768) {
-    gsap.utils.toArray(".right-to-left").forEach((box) => {
-      gsap.to(box, {
-        x: -200,
-        opacity: 1,
-        scale: 1,
-        scrollTrigger: {
-          trigger: box,
-          start: "top 90%",
-          end: "50% 50%",
-          scrub: true,
-          markers: false,
-        },
-      });
+if (window.innerWidth < 768) {
+  gsap.utils.toArray(".top-to-bottom").forEach((box) => {
+    gsap.to(box, {
+      y: -200,
+      opacity: 1,
+      scale: 1,
+      scrollTrigger: {
+        trigger: box,
+        start: "top 95%",
+        end: "50% 90%",
+        scrub: true,
+        markers: false,
+      },
     });
+  });
+}
 
-    gsap.utils.toArray(".left-to-right").forEach((box) => {
-      gsap.to(box, {
-        x: 200,
-        opacity: 1,
-        scale: 1,
-        scrollTrigger: {
-          trigger: ".left-to-right",
-          start: "top 90%",
-          end: "50% 50%",
-          scrub: true,
-          markers: false,
-        },
-      });
+if (window.innerWidth >= 768) {
+  gsap.utils.toArray(".right-to-left").forEach((box) => {
+    gsap.to(box, {
+      x: -200,
+      opacity: 1,
+      scale: 1,
+      scrollTrigger: {
+        trigger: box,
+        start: "top 90%",
+        end: "50% 50%",
+        scrub: true,
+        markers: false,
+      },
     });
-  }
-});
+  });
+
+  gsap.utils.toArray(".left-to-right").forEach((box) => {
+    gsap.to(box, {
+      x: 200,
+      opacity: 1,
+      scale: 1,
+      scrollTrigger: {
+        trigger: ".left-to-right",
+        start: "top 90%",
+        end: "50% 50%",
+        scrub: true,
+        markers: false,
+      },
+    });
+  });
+}
 
 // Theme Mode
 const changeThemeButton = document.querySelector("#themeBtn");

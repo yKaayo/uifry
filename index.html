@@ -30,7 +30,7 @@
   </head>
   <body class="bg-white dark:bg-black overflow-x-hidden">
     <!-- Header -->
-    <header class="fixed top-0 w-dvw z-10">
+    <header class="header fixed top-0 w-dvw z-10">
       <div
         class="h-20 absolute w-dvw bg-gradient-to-b from-white dark:from-black to-transparent"
       ></div>
@@ -58,10 +58,10 @@
             class="flex justify-center items-center size-12 rounded-lg text-black dark:text-white focus:ring-1 focus:ring-black duration-300 dark:focus:ring-white md:hidden"
             aria-controls="navbar-default"
             aria-expanded="false"
-            role="switch"
-            aria-label="Open menu"
+            aria-label="Main menu"
           >
             <i class="bi bi-justify-right text-2xl"></i>
+            <span class="sr-only">Open menu</span>
           </button>
         </div>
 
@@ -134,18 +134,18 @@
         class="flex flex-col md:items-start items-center gap-5 relative z-[2]"
       >
         <h1
-          class="font-bold text-clamp-6xl text-balance md:text-start text-center dark:text-white"
+          class="hero__text font-bold text-clamp-6xl text-balance md:text-start text-center dark:text-white"
         >
           Make The Best Financial Decisions
         </h1>
         <p
-          class="text-balance text-center md:text-start text-light-gray dark:text-gray-300"
+          class="hero__text text-balance text-center md:text-start text-light-gray dark:text-gray-300"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
           ducimus voluptatibus nobis, accusantium eligendi laborum pariatur
           optio eaque ea consectetur?
         </p>
-        <div class="flex items-center gap-3 md:gap-5 mt-3">
+        <div class="hero__text flex items-center gap-3 md:gap-5 mt-3">
           <a href="#" class="btn--dark"
             >Get Started<i
               class="bi bi-arrow-right ms-2 text-md"
@@ -1241,9 +1241,11 @@
     ></script>
 
     <!-- GSAP -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
-    
+    <script
+      src="./node_modules/gsap/dist/ScrollTrigger.min.js"
+      type="module"
+    ></script>
+
     <!-- JS -->
     <script src="./src/main.js" type="module"></script>
   </body>
