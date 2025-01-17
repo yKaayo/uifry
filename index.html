@@ -19,13 +19,13 @@
       type="image/x-icon"
     />
 
-    <!-- Bootstrap Icons -->
+    <!-- Bootstrap Icon -->
     <link
       rel="stylesheet"
-      href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
 
-    <!-- Tailwind -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body class="bg-white dark:bg-black overflow-x-hidden">
@@ -55,10 +55,11 @@
           <button
             id="menuButton"
             data-collapse-toggle="navbar-default"
-            type="button"
             class="flex justify-center items-center size-12 rounded-lg text-black dark:text-white focus:ring-1 focus:ring-black duration-300 dark:focus:ring-white md:hidden"
             aria-controls="navbar-default"
             aria-expanded="false"
+            role="switch"
+            aria-label="Open menu"
           >
             <i class="bi bi-justify-right text-2xl"></i>
           </button>
@@ -1239,6 +1240,10 @@
       type="module"
     ></script>
 
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    
     <!-- JS -->
     <script src="./src/main.js" type="module"></script>
   </body>
